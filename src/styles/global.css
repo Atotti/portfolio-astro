@@ -42,18 +42,18 @@ section h2 {
     border-bottom: 2px solid #0077cc;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
-    color: #0077cc;
+    color: #404950;
+    font-family: "Varela Round";
 }
 
 /* カード風デザイン */
 .card {
-    padding: 1rem;
+    padding: 20px;
     background: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
-
 /* リンク */
 a {
     color: #0077cc;
