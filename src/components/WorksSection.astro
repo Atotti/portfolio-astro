@@ -2,8 +2,21 @@
 import Qualtet from './Works/Qualtet.astro';
 import Ishiike from './Works/Ishiike.astro';
 ---
+<style>
+.card {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+</style>
 <section>
     <h2>Works</h2>
-    <Qualtet />
-    <Ishiike />
+    <div class="card">
+        <Qualtet />
+    </div>
+    <div class="card">
+        <Ishiike />
+    </div>
 </section>

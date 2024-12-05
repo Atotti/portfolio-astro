@@ -1,12 +1,79 @@
 ---
 ---
+
+<style>
+/* Skillsセクション全体のスタイル */
+.section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.h2 {
+    font-size: 2rem;
+    color: #0077cc;
+    font-family: "Noto Sans JP", "Varela Round", sans-serif;
+    margin-bottom: 20px;
+}
+
+/* グリッドレイアウト */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+/* カードスタイル */
+.skill-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* アイコンスタイル */
+.skill-card i {
+    font-size: 2rem;
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+/* テキストスタイル */
+.skill-card p {
+    font-size: 1rem;
+    color: #666666;
+    margin: 0;
+    font-family: "Noto Sans JP", "Varela Round", sans-serif;
+}
+
+/* ホバーエフェクト */
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+</style>
+
 <section>
     <h2>Skills</h2>
-    <ul>
-        <li><i class="fa-brands fa-html5"></i> HTML</li>
-        <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
-        <li><i class="fa-brands fa-js"></i> JavaScript</li>
-        <li><i class="fa-brands fa-python"></i> Python</li>
-        <li><i class="fa-brands fa-react"></i> React</li>
-    </ul>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class="fa-brands fa-python"></i>
+            <p>Python</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-golang"></i>
+            <p>Go</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-docker"></i>
+            <p>Docker</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+        </div>
+    </div>
 </section>
