@@ -1,0 +1,34 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介ページ</title>
+</head>
+<body>
+    <Header />
+    <main>
+        <section>
+            <h2>自己紹介</h2>
+            <p>こんにちは！私はWeb開発が好きな学生です。趣味はプログラミングと読書です。</p>
+        </section>
+        <section>
+            <h2>スキル</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Astro</li>
+            </ul>
+        </section>
+        <section>
+            <h2>お問い合わせ</h2>
+            <p>メールでお問い合わせください：<a href="mailto:example@example.com">example@example.com</a></p>
+        </section>
+    </main>
+    <Footer />
+</body>
+</html>
