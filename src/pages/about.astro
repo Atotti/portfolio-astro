@@ -1,33 +1,29 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
----
+import AboutSection from '../components/AboutSection.astro';
+import SkillsSection from '../components/SkillsSection.astro';
+import WorksSection from '../components/WorksSection.astro';
+import ArticlesSection from '../components/ArticlesSection.astro';
+import ContactSection from '../components/ContactSection.astro';
 
+import '../styles/global.css';
+---
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>自己紹介ページ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>About me</title>
 </head>
 <body>
     <Header />
     <main>
-        <section>
-            <h2>自己紹介</h2>
-            <p>こんにちは！私はWeb開発が好きな学生です。趣味はプログラミングと読書です。</p>
-        </section>
-        <section>
-            <h2>スキル</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Astro</li>
-            </ul>
-        </section>
-        <section>
-            <h2>お問い合わせ</h2>
-            <p>メールでお問い合わせください：<a href="mailto:example@example.com">example@example.com</a></p>
-        </section>
+        <AboutSection />
+        <SkillsSection />
+        <WorksSection />
+        <ArticlesSection />
+        <ContactSection />
     </main>
     <Footer />
 </body>

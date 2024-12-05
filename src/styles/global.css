@@ -1,0 +1,83 @@
+/* ベースのスタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ヘッダーとフッター */
+header {
+    background: #0077cc;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* 各セクション */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #0077cc;
+}
+
+/* カード風デザイン */
+.card {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* リンク */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* リストスタイル */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+ul li i {
+    margin-right: 0.5rem;
+    color: #0077cc;
+}
+
+
