@@ -6,20 +6,25 @@ import Ishiike from './Works/Ishiike.astro';
 <section>
     <h2>Works</h2>
     <div class="card">
-        <Qualtet />
+        <Ishiike />
     </div>
     <div class="card">
-        <Ishiike />
+        <Qualtet />
     </div>
 </section>
 
 
 <style>
-    .card {
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        margin-bottom: 15px;
-    }
+.card {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+/* ホバーエフェクト */
+.card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
 </style>
