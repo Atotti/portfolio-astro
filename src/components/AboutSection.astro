@@ -2,10 +2,10 @@
 import ProfileIcon from "./ProfileIcon.astro"
 ---
 
-<section class="about-section">
+<section>
     <div class="about-container">
         <ProfileIcon />
-        <div class="about-text">
+        <div>
             <h2>About Me</h2>
             <p>プログラミングが趣味の学生です。フロントエンド開発やバックエンドにも興味があります。</p>
             <p>最近はNLPに感心があります。</p>
@@ -14,29 +14,12 @@ import ProfileIcon from "./ProfileIcon.astro"
 </section>
 
 <style>
-.about-section {
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 800px;
-    font-family: "Noto Sans JP", sans-serif;
-}
-
 /* 横並びにするコンテナ */
-.about-container {
-    display: flex;
-    align-items: center; /* 縦方向で中央揃え */
-    gap: 20px; /* アイコンとテキストの間隔 */
-}
-
-/* プロフィール画像のサイズ調整 */
-.about-container ProfileIcon {
-    flex-shrink: 0; /* 画像が縮まないようにする */
-}
-
-.about-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-    margin: 0;
+@media (min-width: 900px) {
+    .about-container {
+        display: flex;
+        align-items: center; /* 縦方向で中央揃え */
+        gap: 20px; /* アイコンとテキストの間隔 */
+    }
 }
 </style>

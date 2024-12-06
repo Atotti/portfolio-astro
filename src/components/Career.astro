@@ -115,7 +115,7 @@ h3 {
     left: calc(50% - 6px); /* 中央から右にずらす */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .career-item {
         width: 100%;
         text-align: left;
@@ -130,8 +130,24 @@ h3 {
         left: 20px; /* タイムラインを左端に配置 */
     }
 
-    .career-item:before {
-        left: 12px; /* 点を左端に配置 */
+    .career-item.left:before {
+        left: 14px; /* 点を左端に配置 */
+        top: 54px; /* 点を上に配置 */
     }
+
+    .career-item.right:before {
+        left: 14px; /* 点を右端に配置 */
+        top: 54px; /* 点を上に配置 */
+    }
+
+    .career-item:after {
+        width: 0; /* 線を非表示 */
+    }
+
+    .career-item.left:after {
+        left: 20px; /* 左側の線を左端に配置 */
+    }
+
+
 }
 </style>
