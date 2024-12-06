@@ -1,4 +1,5 @@
 ---
+import ProgressBar from "./ProgressBar.astro"
 ---
 
 <section>
@@ -6,42 +7,52 @@
     <div class="skills-grid">
         <div class="skill-card">
             <i class="fa-brands fa-python"></i>
+            <ProgressBar percentage={95} />
             <p>Python</p>
         </div>
         <div class="skill-card">
             <i class="fa-brands fa-golang"></i>
+            <ProgressBar percentage={75} />
             <p>Go</p>
         </div>
         <div class="skill-card">
             <i class="fa-brands fa-docker"></i>
+            <ProgressBar percentage={80} />
             <p>Docker</p>
         </div>
         <div class="skill-card">
             <i class="fa-brands fa-git-alt"></i>
+            <ProgressBar percentage={85} />
             <p>Git</p>
         </div>
         <div class="skill-card">
             <i class="fa-brands fa-react"></i>
+            <ProgressBar percentage={70} />
             <p>React</p>
         </div>
         <div class="skill-card">
             <i class="fa-brands fa-php"></i>
+            <ProgressBar percentage={60} />
             <p>PHP</p>
         </div>
         <div class="skill-card">
             <i class="fa-brands fa-swift"></i>
+            <ProgressBar percentage={50} />
             <p>Swift</p>
         </div>
         <div class="skill-card">
             <i class="fa-brands fa-html5"></i>
+            <ProgressBar percentage={55} />
             <p>HTML</p>
         </div>
         <div class="skill-card">
             <i class="fa-brands fa-css3-alt"></i>
+            <ProgressBar percentage={40} />
             <p>CSS</p>
         </div>
         <div class="skill-card">
             <i class="fa-brands fa-js-square"></i>
+            <ProgressBar percentage={70} />
             <p>JavaScript</p>
         </div>
     </div>
@@ -69,6 +80,11 @@
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 80px; /* 横幅を固定 */
+    height: 80px; /* 高さを固定 */
+    flex-direction: column; /* 縦方向に要素を配置 */
+    justify-content: center; /* 縦方向の中央揃え */
+    align-items: center; /* 横方向の中央揃え */
 }
 /* アイコンスタイル */
 .skill-card i {

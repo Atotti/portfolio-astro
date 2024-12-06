@@ -1,0 +1,44 @@
+---
+export interface Props {
+    percentage: number; // 進行度（例: 80）
+    color?: string; // カスタムカラー（省略可能）
+}
+
+const { percentage, color = "#0077cc" } = Astro.props;
+---
+
+<div class="progress-bar-container">
+    <div class="progress-bar">
+        <div
+            class="progress"
+            style={`width: ${percentage}%; background-color: ${color};`}
+        ></div>
+    </div>
+</div>
+
+<style>
+.progress-bar-container {
+    margin: 10px 0;
+}
+
+.progress-label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+</style>
