@@ -1,0 +1,17 @@
+---
+import { Image } from 'astro:assets';
+import iconImage from "../assets/icon.jpg";
+
+---
+
+<Image src={iconImage} alt="プロフィール画像" class="icon" style={{ border: '5px solid #828fff' }}/>
+
+<style>
+.icon {
+    border-radius: 50%; /* 丸くする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* シャドウで立体感を追加 */
+    object-fit: cover; /* アスペクト比を維持 */
+    width: 150px; /* 幅を指定 */
+    height: 150px; /* 高さを指定 */
+}
+</style>
