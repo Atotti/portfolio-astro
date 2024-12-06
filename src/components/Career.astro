@@ -1,0 +1,137 @@
+---
+export interface CareerItem {
+    year: string;
+    title: string;
+    description: string;
+}
+
+export interface Props {
+    items: CareerItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="career-section">
+    <h2 class="career-title">Career</h2>
+    <ul class="career-timeline">
+        {items.map((item, index) => (
+            <li class={`career-item ${index % 2 === 0 ? "left" : "right"}`}>
+                <div class="career-content">
+                    <h3 class="career-year">{item.year}</h3>
+                    <h4 class="career-title">{item.title}</h4>
+                    <p class="career-description">{item.description}</p>
+                </div>
+            </li>
+        ))}
+    </ul>
+</section>
+
+<style>
+h3 {
+    color: #0077cc;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+.career-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border-left: none; /* 中央タイムラインを独立 */
+}
+
+.career-item {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.career-item.left {
+    text-align: left;
+    padding-left: 50%; /* 左側に配置 */
+}
+
+.career-item.right {
+    text-align: left;
+    padding-right: 50%; /* 右側に配置 */
+}
+
+.career-item:after {
+    content: "";
+    position: absolute;
+    top: 105px; /* ドットの下に配置 */
+    left: 50%; /* 中央に配置 */
+    width: 50%; /* 線の長さ */
+    height: 1px; /* 線の幅 */
+    background: #0077cc; /* 線の色 */
+    z-index: 1;
+}
+
+.career-item.left:after {
+    left: 50%; /* 左側の線を配置 */
+}
+
+.career-item.right:after {
+    left: -2px; /* 右側の線を配置 */
+}
+
+.career-content {
+    border-radius: 8px;
+    padding: 15px;
+    display: inline-block;
+    width: 80%; /* コンテンツの幅 */
+}
+
+.career-timeline:before {
+    content: "";
+    position: absolute;
+    left: 50%; /* 中央配置 */
+    top: 0;
+    bottom: 0;
+    width: 3px; /* 中央線の幅 */
+    background: #0077cc; /* 中央線の色 */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.career-item:before {
+    content: "";
+    position: absolute;
+    top: 75px;
+    width: 12px;
+    height: 12px;
+    background: #0077cc; /* 点の色 */
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.career-item.left:before {
+    right: calc(50% - 6px); /* 中央から左にずらす */
+}
+
+.career-item.right:before {
+    left: calc(50% - 6px); /* 中央から右にずらす */
+}
+
+@media (max-width: 768px) {
+    .career-item {
+        width: 100%;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .career-item.left, .career-item.right {
+        padding: 0 20px;
+    }
+
+    .career-timeline:before {
+        left: 20px; /* タイムラインを左端に配置 */
+    }
+
+    .career-item:before {
+        left: 12px; /* 点を左端に配置 */
+    }
+}
+</style>
