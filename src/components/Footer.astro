@@ -1,15 +1,25 @@
 ---
+const today = new Date().toLocaleDateString('ja-JP', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+});
+
 ---
 <footer>
-    <p>&copy; 2024 aya172957</p>
+    <p>最終更新 {today}</p>
 </footer>
 
 
 <style>
-    footer {
-        background: #333;
-        color: white;
-        padding: 1rem 0;
-        text-align: center;
-    }
+footer {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+p {
+    margin: 0;
+    color: #d4d4d4;
+}
 </style>
