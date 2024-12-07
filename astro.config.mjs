@@ -5,4 +5,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://Atotti.github.io',
   base: '/astro-portfolio',
+  outDir: 'dist',
 })
