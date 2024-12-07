@@ -4,14 +4,14 @@ export interface Props {
     color?: string; // カスタムカラー（省略可能）
 }
 
-const { percentage, color = "#0077cc" } = Astro.props;
+const { percentage, color = "linear-gradient(to right, #0077cc, #00a0ff)" } = Astro.props;
 ---
 
 <div class="progress-bar-container">
     <div class="progress-bar">
         <div
             class="progress"
-            style={`width: ${percentage}%; background-color: ${color};`}
+            style={`width: ${percentage}%; background: ${color};`}
         ></div>
     </div>
 </div>
