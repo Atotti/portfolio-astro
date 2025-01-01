@@ -9,7 +9,7 @@ const posts = await getCollection('posts');
 <Layout>
   <section class="blog-index">
     <h1 class="section-title">Articles</h1>
-    <div class="blog-grid">
+    <div class="blog-list">
       {posts.map((post: CollectionEntry<'posts'>) => (
         <a href={`/blog/${post.slug}`} class="blog-card">
           <h2 class="blog-title">{post.data.title}</h2>
@@ -27,13 +27,17 @@ const posts = await getCollection('posts');
 </Layout>
 
 <style>
+/* ブログ一覧セクション */
 .blog-index {
   padding: 2rem 1rem;
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
+/* セクションタイトル */
 .section-title {
   font-family: "Varela Round", sans-serif;
   font-size: 2rem;
@@ -44,12 +48,14 @@ const posts = await getCollection('posts');
   padding-bottom: 0.5rem;
 }
 
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* 記事リスト */
+.blog-list {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 
+/* 記事カード */
 .blog-card {
   background: #f9f9f9;
   border-radius: 8px;
@@ -63,26 +69,32 @@ const posts = await getCollection('posts');
 .blog-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none; /* ホバー時も下線を無効化 */
 }
 
+/* 記事タイトル */
 .blog-title {
   font-size: 1.5rem;
   color: #0077cc;
   margin-bottom: 0.5rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
+/* 公開日 */
 .blog-date {
   font-size: 0.9rem;
   color: #777;
   margin-bottom: 0.5rem;
 }
 
+/* 記事の説明 */
 .blog-description {
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
 }
 
+/* タグ */
 .blog-tags {
   display: flex;
   gap: 0.5rem;
