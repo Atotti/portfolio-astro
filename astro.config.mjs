@@ -1,9 +1,17 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://Atotti.github.io/portfolio-astro',
-  base: '/portfolio-astro',
-  outDir: 'dist',
-})
+  content: {
+    collections: {
+      posts: {
+        schema: ({ z }) => z.object({
+          title: z.string(),
+          pubDate: z.string(),
+          description: z.string(),
+          author: z.string(),
+          tags: z.array(z.string()),
+        }),
+      },
+    },
+  },
+});

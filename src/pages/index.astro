@@ -1,12 +1,52 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import AboutSection from '../components/AboutSection.astro';
+import SkillsSection from '../components/SkillsSection.astro';
+import WorksSection from '../components/WorksSection.astro';
+import ArticlesSection from '../components/ArticlesSection.astro';
+import ContactSection from '../components/ContactSection.astro';
+import SnsIcons from '../components/SnsIcons.astro';
+import Career from '../components/Career.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../styles/global.css';
+
+const careerItems = [
+    { year: "April 2022", title: "大学入学", description: "東京都立大学に入学し、コンピュータサイエンスを専攻" },
+    { year: "December 2022", title: "ICPC Asia Yokohama Regional", description: "国内予選を突破しICPCアジア予選に出場 53位を獲得" },
+    { year: "August 2023", title: "Software engineer Intern at pixiv Inc.", description: "pixivコミックのバックエンド開発に携わる" },
+    { year: "October 2023", title: "プログラミングコンテスト 30th", description: "PGBattle2023 大学専門学校の部30位 アシスト賞" },
+    { year: "December 2023", title: "ハッカソン 最優秀賞", description: "Google Developer Solution Challenge Japan 2023 最優秀賞 & チームラボ賞"},
+    { year: "February 2024 ~", title: "Software engineer Intern at Monoxer", description: "iOS, Android, Web Frotend, Backend フルスタックで開発"},
+    { year: "August 2024", title: "Software engineer Intern at COLOPL, inc.", description: "ソーシャルゲームのサーバサイド開発を経験"},
+    { year: "September 2024", title: "CyberAgent ACE 2024 個人賞", description: "CyberAgentのインターンにて個人賞を受賞"},
+    { year: "Now", title: "", description: "" }
+];
+
 ---
-
-<Layout>
-	<p>Welcome to ayutaso.com!</p>
-	<p>main page is /about. Please watch /about !</p>
-</Layout>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Rampart+One&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icon.jpg" type="image/x-icon" />
+    <title>About me</title>
+</head>
+<body>
+    <Header />
+    <main>
+        <AboutSection />
+        <SkillsSection />
+        <WorksSection />
+        <ArticlesSection />
+        <Career items={careerItems} />
+        <ContactSection />
+        <SnsIcons />
+    </main>
+    <Footer />
+</body>
+</html>

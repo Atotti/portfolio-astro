@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getEntryBySlug, getCollection, type CollectionEntry } from 'astro:content';
+
+// 動的ルートのパスを生成
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post: CollectionEntry<'posts'>) => ({
+    params: { slug: post.slug }
+  }));
+}
+
+// 型を明示
+const { slug } = Astro.params;
+const post = await getEntryBySlug('posts', slug) as CollectionEntry<'posts'>;
+
+if (!post) {
+  throw new Error(`Post not found for slug: ${slug}`);
+}
+---
+
+<Layout>
+  <h1>{post.data.title}</h1>
+  <p><strong>公開日:</strong> {post.data.pubDate}</p>
+  <p><strong>著者:</strong> {post.data.author}</p>
+  <article>
+    {post.content}
+  </article>
+</Layout>
