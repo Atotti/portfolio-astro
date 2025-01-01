@@ -9,6 +9,7 @@ const posts = await getCollection('posts');
 <Layout>
   <section class="blog-index">
     <h1 class="section-title">Articles</h1>
+    <p>長めのTwitterくらいの感覚で適当に書くものとする。</p>
     <div class="blog-list">
       {posts.map((post: CollectionEntry<'posts'>) => (
         <a href={`/blog/${post.slug}`} class="blog-card">
