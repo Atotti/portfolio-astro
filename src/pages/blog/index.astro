@@ -2,21 +2,98 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-// ブログ記事一覧を取得
+// 記事一覧を取得
 const posts = await getCollection('posts');
 ---
 
 <Layout>
-  <h1>ブログ一覧</h1>
-  <ul class="blog-list">
-    {posts.map((post: CollectionEntry<'posts'>) => (
-      <li class="blog-item">
-        <a href={`/blog/${post.slug}`}>
-          <h2>{post.data.title}</h2>
+  <section class="blog-index">
+    <h1 class="section-title">Articles</h1>
+    <div class="blog-grid">
+      {posts.map((post: CollectionEntry<'posts'>) => (
+        <a href={`/blog/${post.slug}`} class="blog-card">
+          <h2 class="blog-title">{post.data.title}</h2>
+          <p class="blog-date">📅 {post.data.pubDate}</p>
+          <p class="blog-description">{post.data.description}</p>
+          <div class="blog-tags">
+            {post.data.tags.map((tag: string) => (
+              <span class="blog-tag">#{tag}</span>
+            ))}
+          </div>
         </a>
-        <p><strong>公開日:</strong> {post.data.pubDate}</p>
-        <p>{post.data.description}</p>
-      </li>
-    ))}
-  </ul>
+      ))}
+    </div>
+  </section>
 </Layout>
+
+<style>
+.blog-index {
+  padding: 2rem 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #404950;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #828fff;
+  padding-bottom: 0.5rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.blog-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.blog-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.blog-tag {
+  background: #e0e0f8;
+  color: #555;
+  border-radius: 12px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+}
+</style>

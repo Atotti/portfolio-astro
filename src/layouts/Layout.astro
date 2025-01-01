@@ -1,22 +1,77 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Rampart+One&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/jpg" href="/icon.jpg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>あゆたそどっとこむ</title>
+		<link rel="stylesheet" href="/src/styles/global.css" />
 	</head>
 	<body>
-		<slot />
+		<!-- ページ全体をカバーするコンテナ -->
+		<div class="layout-container">
+			<!-- ヘッダー -->
+			<Header />
+			<!-- 明示的な余白を追加 -->
+			<div class="header-spacer"></div>
+			<!-- メインコンテンツ -->
+			<main class="layout-main">
+				<slot />
+			</main>
+			<!-- フッター -->
+			<Footer />
+		</div>
 	</body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+/* レイアウトコンテナ */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ビューポートの高さを最低限確保 */
+}
+
+/* Header下に余白を追加 */
+.header-spacer {
+    margin-bottom: 1.5rem;
+}
+
+/* メインコンテンツ */
+.layout-main {
+    flex: 1; /* 残りのスペースをすべて埋める */
+    width: 100%; /* 幅を100%に広げる */
+    max-width: 800px; /* 最大幅を設定 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 20px;
+    box-sizing: border-box; /* パディング込みで幅を計算 */
+}
+
+/* フッターをページ下部に配置 */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: auto; /* 上部に余白を追加し、下部に配置 */
+}
+
+/* スマホ対応 */
+@media (max-width: 900px) {
+    .layout-main {
+        max-width: 95% !important;
+        padding: 15px !important;
+    }
+}
 </style>

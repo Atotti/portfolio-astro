@@ -1,6 +1,5 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
 import AboutSection from '../components/AboutSection.astro';
 import SkillsSection from '../components/SkillsSection.astro';
 import WorksSection from '../components/WorksSection.astro';
@@ -8,8 +7,6 @@ import ArticlesSection from '../components/ArticlesSection.astro';
 import ContactSection from '../components/ContactSection.astro';
 import SnsIcons from '../components/SnsIcons.astro';
 import Career from '../components/Career.astro';
-
-import '../styles/global.css';
 
 const careerItems = [
     { year: "April 2022", title: "大学入学", description: "東京都立大学に入学し、コンピュータサイエンスを専攻" },
@@ -22,31 +19,14 @@ const careerItems = [
     { year: "September 2024", title: "CyberAgent ACE 2024 個人賞", description: "CyberAgentのインターンにて個人賞を受賞"},
     { year: "Now", title: "", description: "" }
 ];
-
 ---
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Rampart+One&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/icon.jpg" type="image/x-icon" />
-    <title>About me</title>
-</head>
-<body>
-    <Header />
-    <main>
-        <AboutSection />
-        <SkillsSection />
-        <WorksSection />
-        <ArticlesSection />
-        <Career items={careerItems} />
-        <ContactSection />
-        <SnsIcons />
-    </main>
-    <Footer />
-</body>
-</html>
+
+<Layout>
+    <AboutSection />
+    <SkillsSection />
+    <WorksSection />
+    <ArticlesSection />
+    <Career items={careerItems} />
+    <ContactSection />
+    <SnsIcons />
+</Layout>
