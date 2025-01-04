@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 
+import react from '@astrojs/react';
+
 export default defineConfig({
   content: {
     collections: {
@@ -14,4 +16,10 @@ export default defineConfig({
       },
     },
   },
+  vite: {
+    ssr: {
+      noExternal: ["react-icons"],
+    },
+  },
+  integrations: [react()],
 });
