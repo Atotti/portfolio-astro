@@ -1,17 +1,21 @@
 ---
 import ProfileIcon from "./ProfileIcon.astro"
+
+import SectionTitle from "./SectionTitle.astro"
+import Section from "./Atoms/Section.astro"
+import SectionContent from "./Atoms/SectionContent.astro"
 ---
 
-<section>
+<Section>
     <div class="about-container">
         <ProfileIcon />
         <div>
-            <h2>About Me</h2>
-            <p>プログラミングが趣味の学生です。フロントエンド開発やバックエンドにも興味があります。</p>
-            <p>最近はNLPに感心があります。</p>
+            <SectionTitle>About me</SectionTitle>
+            <SectionContent>プログラミングが趣味の学生です。フロントエンド開発やバックエンドにも興味があります。このサイトは Astro × PandaCSS で作成しました。
+            最近はNLPに感心があります。</SectionContent>
         </div>
     </div>
-</section>
+</Section>
 
 <style>
 /* 横並びにするコンテナ */

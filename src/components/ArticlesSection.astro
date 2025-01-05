@@ -1,9 +1,14 @@
 ---
+import SectionTitle from './SectionTitle.astro';
+import Section from './Atoms/Section.astro';
+import SectionContent from './Atoms/SectionContent.astro';
 ---
-<section>
-    <h2>Articles</h2>
-    <p><a href="https://tech.monoxer.com/entry/2024/03/29/200924">Monoxer Intern Report #16_文章分割確認ツールの開発</a></p>
-    <p><a>[準備中] APIを使用せずに Django Template 中でReactを使用する方法</a></p>
-    <p><a>[準備中] ICPC2022 アジア大会参加記</a></p>
-    <p><a>[準備中] CyberAgent ACE 2024 で最高に成長できた話</a></p>
-</section>
+<Section>
+    <SectionTitle>Articles</SectionTitle>
+    <SectionContent>
+        <p><a href="https://tech.monoxer.com/entry/2024/03/29/200924">Monoxer Intern Report #16_文章分割確認ツールの開発</a></p>
+        <p><a>[準備中] APIを使用せずに Django Template 中でReactを使用する方法</a></p>
+        <p><a>[準備中] ICPC2022 アジア大会参加記</a></p>
+        <p><a>[準備中] CyberAgent ACE 2024 で最高に成長できた話</a></p>
+    </SectionContent>
+</Section>

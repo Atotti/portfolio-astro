@@ -1,108 +1,365 @@
 ---
 import ProgressBar from "./ProgressBar.astro"
+
 import { FaPython } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
+import { FaSwift } from "react-icons/fa6";
+import { FaPhp } from "react-icons/fa6";
+import { SiTypescript } from "react-icons/si";
+import { SiScala } from "react-icons/si";
+import { DiRuby } from "react-icons/di";
+import { TbBrandCpp } from "react-icons/tb";
+import { TbBrandCSharp } from "react-icons/tb";
+import { SiKotlin } from "react-icons/si";
+
+import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { SiAstro } from "react-icons/si";
+import { DiDjango } from "react-icons/di";
+import { SiFlask } from "react-icons/si";
+import { SiPytorch } from "react-icons/si";
+import { FaLaravel } from "react-icons/fa";
+import { SiRubyonrails } from "react-icons/si";
+import { SiGoogleappsscript } from "react-icons/si";
+import { FaUnity } from "react-icons/fa";
+
+
+import { SiMysql } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiSqlite } from "react-icons/si";
+
+
+import { SiNginx } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { SiGooglecloud } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
+import { GrHeroku } from "react-icons/gr";
+import { FaCloudflare } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
+
+
+import { FaDocker } from "react-icons/fa";
+import { BiLogoKubernetes } from "react-icons/bi";
+import { FaGitAlt } from "react-icons/fa6";
+import { VscVscode } from "react-icons/vsc";
+import { SiJetbrains } from "react-icons/si";
+import { FaVimeo } from "react-icons/fa";
+import { FaSlack } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiNotion } from "react-icons/si";
+import { SiJira } from "react-icons/si";
+
+
+
+import SectionTitle from "./SectionTitle.astro";
+import Section from "./Atoms/Section.astro";
+
+import { css } from '../../styled-system/css'
+
+const skillCardStyle = css({
+    "backgroundColor": "#ffffff",
+    "borderRadius": "10px",
+    "padding": "20px",
+    "textAlign": "center",
+    "transition": "transform 0.3s ease, box-shadow 0.3s ease",
+    "width": "100px",
+    "height": "100px",
+    "flexDirection": "column",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "_hover": {
+        "transform": "translateY(-10px)",
+        "boxShadow": "0 6px 12px rgba(0, 0, 0, 0.2)",
+    }
+})
+
+const skillCardIconStyle = css({
+    "fontSize": "2rem",
+    "color": "#0077cc",
+    "display": "flex",
+    "margin": "auto",
+})
+
+const skillCardTextStyle = css({
+    "fontSize": "1rem",
+    "width": "100%",
+    "display": "flex",
+    "color": "#666666",
+    "justifyContent": "center",
+    "fontFamily": "Noto Sans JP, Varela Round, sans-serif",
+})
 ---
 
-<section>
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-card">
-            <FaPython />
+<Section>
+    <SectionTitle>Skills</SectionTitle>
+    <h3 class={css({
+        "fontSize": "1.2rem",
+        "color": "#333",
+        "marginBottom": "1rem",
+        "textAlign": "center",
+    })}>Programming Languages
+    </h3>
+    <div class={css({
+        "display": "grid",
+        "gridTemplateColumns": "repeat(auto-fit, minmax(120px, 1fr))",
+        "gap": "20px",
+        "justifyItems": "center",
+        "padding": "20px",
+        "marginBottom": "1rem",
+    })
+    }>
+        <div class={skillCardStyle}>
+            <FaPython className={skillCardIconStyle} size="80%"/>
             <ProgressBar percentage={95} />
-            <p>Python</p>
+            <p class={skillCardTextStyle}>Python</p>
         </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-golang"></i>
-            <ProgressBar percentage={75} />
-            <p>Go</p>
-        </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-docker"></i>
+        <div class={skillCardStyle}>
+            <FaGolang className={skillCardIconStyle} size="80%"/>
             <ProgressBar percentage={80} />
-            <p>Docker</p>
+            <p class={skillCardTextStyle}>Go</p>
         </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-git-alt"></i>
-            <ProgressBar percentage={85} />
-            <p>Git</p>
+        <div class={skillCardStyle}>
+            <SiTypescript className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={80} />
+            <p class={skillCardTextStyle}>TypeScript</p>
         </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-react"></i>
+        <div class={skillCardStyle}>
+            <TbBrandCpp className={skillCardIconStyle} size="80%" />
             <ProgressBar percentage={70} />
-            <p>React</p>
+            <p class={skillCardTextStyle}>C++</p>
         </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-php"></i>
-            <ProgressBar percentage={60} />
-            <p>PHP</p>
+        <div class={skillCardStyle}>
+            <TbBrandCSharp className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={75} />
+            <p class={skillCardTextStyle}>C#</p>
         </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-swift"></i>
-            <ProgressBar percentage={50} />
-            <p>Swift</p>
-        </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-html5"></i>
+        <div class={skillCardStyle}>
+            <SiKotlin className={skillCardIconStyle} size="80%" />
             <ProgressBar percentage={55} />
-            <p>HTML</p>
+            <p class={skillCardTextStyle}>Kotlin</p>
         </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-css3-alt"></i>
-            <ProgressBar percentage={40} />
-            <p>CSS</p>
+        <div class={skillCardStyle}>
+            <FaSwift className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={60} />
+            <p class={skillCardTextStyle}>Swift</p>
         </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-js-square"></i>
-            <ProgressBar percentage={70} />
-            <p>JavaScript</p>
+        <div class={skillCardStyle}>
+            <DiRuby className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={55} />
+            <p class={skillCardTextStyle}>Ruby</p>
+        </div>
+        <div class={skillCardStyle}>
+            <FaPhp className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={60} />
+            <p class={skillCardTextStyle}>PHP</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiScala className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={55} />
+            <p class={skillCardTextStyle}>Scala</p>
         </div>
     </div>
-</section>
+    <h3 class={css({
+        "fontSize": "1.2rem",
+        "color": "#333",
+        "marginBottom": "1rem",
+        "textAlign": "center",
+    })}>Frameworks & Libraries
+    </h3>
+    <div class={css({
+        "display": "grid",
+        "gridTemplateColumns": "repeat(auto-fit, minmax(120px, 1fr))",
+        "gap": "20px",
+        "justifyItems": "center",
+        "padding": "20px",
+        "marginBottom": "1rem",
+    })
+    }>
+        <div class={skillCardStyle}>
+            <FaReact className={skillCardIconStyle} size="80%"/>
+            <ProgressBar percentage={85} />
+            <p class={skillCardTextStyle}>React</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiNextdotjs className={skillCardIconStyle} size="80%"/>
+            <ProgressBar percentage={85} />
+            <p class={skillCardTextStyle}>Next.js</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiAstro className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={90} />
+            <p class={skillCardTextStyle}>Astro</p>
+        </div>
+        <div class={skillCardStyle}>
+            <DiDjango className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={95} />
+            <p class={skillCardTextStyle}>Django</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiFlask className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={95} />
+            <p class={skillCardTextStyle}>Flask</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiPytorch className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={95} />
+            <p class={skillCardTextStyle}>PyTorch</p>
+        </div>
+        <div class={skillCardStyle}>
+            <FaLaravel className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={65} />
+            <p class={skillCardTextStyle}>Laravel</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiRubyonrails className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={65} />
+            <p class={skillCardTextStyle}>Rails</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiGoogleappsscript className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={90} />
+            <p class={skillCardTextStyle}>GAS</p>
+        </div>
+        <div class={skillCardStyle}>
+            <FaUnity className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={80} />
+            <p class={skillCardTextStyle}>Unity</p>
+        </div>
+    </div>
+    <h3 class={css({
+        "fontSize": "1.2rem",
+        "color": "#333",
+        "marginBottom": "1rem",
+        "textAlign": "center",
+    })}>DataStore & Infra
+    </h3>
+    <div class={css({
+        "display": "grid",
+        "gridTemplateColumns": "repeat(auto-fit, minmax(120px, 1fr))",
+        "gap": "20px",
+        "justifyItems": "center",
+        "padding": "20px",
+        "marginBottom": "1rem",
+    })
+    }>
+        <div class={skillCardStyle}>
+            <SiMysql className={skillCardIconStyle} size="80%"/>
+            <ProgressBar percentage={75} />
+            <p class={skillCardTextStyle}>MySQL</p>
+        </div>
+        <div class={skillCardStyle}>
+            <BiLogoPostgresql className={skillCardIconStyle} size="80%"/>
+            <ProgressBar percentage={75} />
+            <p class={skillCardTextStyle}>PostgreSQL</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiSqlite className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={75} />
+            <p class={skillCardTextStyle}>SQLite</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiNginx className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={70} />
+            <p class={skillCardTextStyle}>Nginx</p>
+        </div>
+        <div class={skillCardStyle}>
+            <FaAws className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={75} />
+            <p class={skillCardTextStyle}>AWS</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiGooglecloud className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={85} />
+            <p class={skillCardTextStyle}>GCP</p>
+        </div>
+        <div class={skillCardStyle}>
+            <VscAzure className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={65} />
+            <p class={skillCardTextStyle}>Azure</p>
+        </div>
+        <div class={skillCardStyle}>
+            <GrHeroku className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={85} />
+            <p class={skillCardTextStyle}>Heroku</p>
+        </div>
+        <div class={skillCardStyle}>
+            <FaCloudflare className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={80} />
+            <p class={skillCardTextStyle}>Cloudflare</p>
+        </div>
+        <div class={skillCardStyle}>
+            <IoLogoFirebase className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={80} />
+            <p class={skillCardTextStyle}>Firebase</p>
+        </div>
+    </div>
+    <h3 class={css({
+        "fontSize": "1.2rem",
+        "color": "#333",
+        "marginBottom": "1rem",
+        "textAlign": "center",
+    })}>Tools
+    </h3>
+    <div class={css({
+        "display": "grid",
+        "gridTemplateColumns": "repeat(auto-fit, minmax(120px, 1fr))",
+        "gap": "20px",
+        "justifyItems": "center",
+        "padding": "20px",
+        "marginBottom": "1rem",
+    })
+    }>
+        <div class={skillCardStyle}>
+            <FaDocker className={skillCardIconStyle} size="80%"/>
+            <ProgressBar percentage={95} />
+            <p class={skillCardTextStyle}>Docker</p>
+        </div>
+        <div class={skillCardStyle}>
+            <BiLogoKubernetes className={skillCardIconStyle} size="80%"/>
+            <ProgressBar percentage={90} />
+            <p class={skillCardTextStyle}>Kubernetes</p>
+        </div>
+        <div class={skillCardStyle}>
+            <FaGitAlt className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={95} />
+            <p class={skillCardTextStyle}>Git</p>
+        </div>
+        <div class={skillCardStyle}>
+            <VscVscode className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={95} />
+            <p class={skillCardTextStyle}>VSCode</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiJetbrains className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={90} />
+            <p class={skillCardTextStyle}>JetBrainsIDE</p>
+        </div>
+        <div class={skillCardStyle}>
+            <FaVimeo className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={60} />
+            <p class={skillCardTextStyle}>Vimeo</p>
+        </div>
+        <div class={skillCardStyle}>
+            <FaSlack className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={100} />
+            <p class={skillCardTextStyle}>Slack</p>
+        </div>
+        <div class={skillCardStyle}>
+            <FaGithub className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={95} />
+            <p class={skillCardTextStyle}>GitHub</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiNotion className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={100} />
+            <p class={skillCardTextStyle}>Notion</p>
+        </div>
+        <div class={skillCardStyle}>
+            <SiJira className={skillCardIconStyle} size="80%" />
+            <ProgressBar percentage={90} />
+            <p class={skillCardTextStyle}>Jira</p>
+        </div>
+    </div>
+</Section>
 
 
-<style>
-/* Skillsセクション全体のスタイル */
-.section {
-    text-align: center;
-    margin-top: 40px;
-}
-/* グリッドレイアウト */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    padding: 0 20px;
-}
-/* カードスタイル */
-.skill-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 80px; /* 横幅を固定 */
-    height: 80px; /* 高さを固定 */
-    flex-direction: column; /* 縦方向に要素を配置 */
-    justify-content: center; /* 縦方向の中央揃え */
-    align-items: center; /* 横方向の中央揃え */
-}
-/* アイコンスタイル */
-.skill-card i {
-    font-size: 2rem;
-    color: #0077cc;
-    margin-bottom: 10px;
-}
-/* テキストスタイル */
-.skill-card p {
-    font-size: 1rem;
-    color: #666666;
-    margin: 0;
-    font-family: "Noto Sans JP", "Varela Round", sans-serif;
-}
-/* ホバーエフェクト */
-.skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-</style>

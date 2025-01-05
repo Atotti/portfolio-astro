@@ -1,45 +1,65 @@
 ---
-export interface CareerItem {
-    year: string;
-    title: string;
-    description: string;
-}
+import SectionTitle from './SectionTitle.astro';
+import Section from './Atoms/Section.astro';
+import SectionContent from './Atoms/SectionContent.astro';
+import { css } from '../../styled-system/css'
 
-export interface Props {
-    items: CareerItem[];
-}
-
-const { items } = Astro.props;
+const items = [
+    { year: "April 2022", title: "大学入学", description: "東京都立大学に入学し、コンピュータサイエンスを専攻" },
+    { year: "August 2023", title: "Software engineer Intern at pixiv Inc.", description: "pixivコミックのバックエンド開発に携わる" },
+    { year: "February 2024", title: "Software engineer Intern at Monoxer", description: "iOS, Android, Web Frotend, Backend フルスタックで開発"},
+    { year: "August 2024", title: "Software engineer Intern at COLOPL, inc.", description: "ソーシャルゲームのサーバサイド開発を経験"},
+    { year: "November 2024", title: "Research scientist Intern at CyberAgent AI Lab", description: "LLMの"}
+];
 ---
 
-<section class="career-section">
-    <h2 class="career-title">Career</h2>
-    <ul class="career-timeline">
-        {items.map((item, index) => (
-            <li class={`career-item ${index % 2 === 0 ? "left" : "right"}`}>
-                <div class="career-content">
-                    <h3 class="career-year">{item.year}</h3>
-                    <h4 class="career-title">{item.title}</h4>
-                    <p class="career-description">{item.description}</p>
-                </div>
-            </li>
-        ))}
-    </ul>
-</section>
+<Section>
+    <SectionTitle>Career</SectionTitle>
+    <SectionContent>
+        <ul class={css({
+            listStyle: "none",
+            padding: 0,
+            margin: 0,
+            position: "relative",
+            borderLeft: "none",
+            _before: {
+                content: "''",
+                position: "absolute",
+                top: 0,
+                bottom: 0,
+                left: "50%",
+                width: "3px",
+                background: "#0077cc",
+                transform: "translateX(-50%)",
+                zIndex: 1
+            }
+        })}>
+            {items.map((item, index) => (
+                <li class={`career-item ${index % 2 === 0 ? "left" : "right"}`}>
+                    <div class={css({
+                        position: "relative",
+                        zIndex: 2,
+                        padding: "20px",
+                        borderRadius: "8px",
+                        display: "inline-block",
+                        width: "80%"
+                    })}>
+                        <h3 class={css({
+                            color: "#0077cc",
+                            fontWeight: 100,
+                            fontSize: "1.5rem"
+                        })}>{item.year}</h3>
+                        <h4 class="career-title">{item.title}</h4>
+                        <p class="career-description">{item.description}</p>
+                    </div>
+                </li>
+            ))}
+        </ul>
+    </SectionContent>
+</Section>
 
 <style>
-h3 {
-    color: #0077cc;
-    font-weight: 100;
-    font-size: 1.5rem;
-}
-.career-timeline {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    border-left: none; /* 中央タイムラインを独立 */
-}
+
 
 .career-item {
     position: relative;
@@ -77,24 +97,6 @@ h3 {
     left: -2px; /* 右側の線を配置 */
 }
 
-.career-content {
-    border-radius: 8px;
-    padding: 15px;
-    display: inline-block;
-    width: 80%; /* コンテンツの幅 */
-}
-
-.career-timeline:before {
-    content: "";
-    position: absolute;
-    left: 50%; /* 中央配置 */
-    top: 0;
-    bottom: 0;
-    width: 3px; /* 中央線の幅 */
-    background: #0077cc; /* 中央線の色 */
-    transform: translateX(-50%);
-    z-index: 1;
-}
 
 .career-item:before {
     content: "";
@@ -147,7 +149,5 @@ h3 {
     .career-item.left:after {
         left: 20px; /* 左側の線を左端に配置 */
     }
-
-
 }
 </style>

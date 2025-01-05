@@ -2,6 +2,8 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
+import { css, cx} from '../../styled-system/css'
+
 import '../styles/global.css';
 import '../index.css';
 ---
@@ -10,7 +12,6 @@ import '../index.css';
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Rampart+One&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
@@ -18,20 +19,13 @@ import '../index.css';
 		<link rel="icon" type="image/jpg" href="/icon.jpg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>あゆたそどっとこむ</title>
-		<link rel="stylesheet" href="/src/styles/global.css" />
 	</head>
 	<body>
-		<!-- ページ全体をカバーするコンテナ -->
 		<div class="layout-container">
-			<!-- ヘッダー -->
 			<Header />
-			<!-- 明示的な余白を追加 -->
-			<div class="header-spacer"></div>
-			<!-- メインコンテンツ -->
 			<main class="layout-main">
 				<slot />
 			</main>
-			<!-- フッター -->
 			<Footer />
 		</div>
 	</body>

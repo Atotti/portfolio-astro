@@ -1,7 +1,7 @@
 ---
 export interface Props {
-    percentage: number; // 進行度（例: 80）
-    color?: string; // カスタムカラー（省略可能）
+    percentage: number;
+    color?: string;
 }
 
 const { percentage, color = "linear-gradient(to right, #0077cc, #00a0ff)" } = Astro.props;
@@ -30,7 +30,7 @@ const { percentage, color = "linear-gradient(to right, #0077cc, #00a0ff)" } = As
 
 .progress-bar {
     width: 100%;
-    height: 10px;
+    height: 5px;
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;

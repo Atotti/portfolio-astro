@@ -3,37 +3,43 @@ import Qualtet from './Works/Qualtet.astro';
 import Ishiike from './Works/Ishiike.astro';
 import TheDice from './Works/TheDice.astro';
 import KibacoAdvance from './Works/KibacoAdvance.astro';
+import SectionTitle from './SectionTitle.astro';
+import Section from './Atoms/Section.astro';
+import SectionContent from './Atoms/SectionContent.astro';
+
+import { css } from '../../styled-system/css'
+
+const cardStyle = css({
+    padding: '20px',
+    background: '#f9f9f9',
+    borderRadius: '8px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    marginBottom: '15px',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+    '&:hover': {
+        transform: 'translateY(-1px)',
+        boxShadow: '0 6px 12px rgba(0, 0, 0, 0.05)',
+    },
+})
+
 ---
 
-<section>
-    <h2>Works</h2>
-    <div class="card">
-        <Ishiike />
-    </div>
-    <div class="card">
-        <Qualtet />
-    </div>
-    <div class="card">
-        <TheDice />
-    </div>
-    <div class="card">
-        <KibacoAdvance />
-    </div>
-</section>
+<Section>
+    <SectionTitle>Works</SectionTitle>
+    <SectionContent>
+        <div class={cardStyle}>
+            <Ishiike />
+        </div>
+        <div class={cardStyle}>
+            <Qualtet />
+        </div>
+        <div class={cardStyle}>
+            <TheDice />
+        </div>
+        <div class={cardStyle}>
+            <KibacoAdvance />
+        </div>
+    </SectionContent>
+</Section>
 
 
-<style>
-.card {
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-/* ホバーエフェクト */
-.card:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-}
-</style>
