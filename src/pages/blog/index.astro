@@ -3,13 +3,13 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
 // 記事一覧を取得
-const posts = await getCollection('posts');
+const posts = (await getCollection('posts')).sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
 
 <Layout>
   <section class="blog-index">
     <h1 class="section-title">Articles</h1>
-    <p>長めのTwitterくらいの感覚で適当に書くものとする。</p>
+    <p>このブログでは、長めのTwitterくらいの感覚で適当に書くものとする。気合の入った発信はZenn等で行う。</p>
     <div class="blog-list">
       {posts.map((post: CollectionEntry<'posts'>) => (
         <a href={`/blog/${post.slug}`} class="blog-card">
