@@ -16,7 +16,7 @@ const items = [
 <Section>
     <SectionTitle>Career</SectionTitle>
     <SectionContent>
-        <ul class={css({
+        <div class={css({
             listStyle: "none",
             padding: 0,
             margin: 0,
@@ -90,13 +90,14 @@ const items = [
                     })}>
                         <div class={css({
                             color: "#0077cc",
-                            fontWeight: 100,
+                            fontWeight: 300,
                             fontSize: "1.5rem",
                         })}>{item.year}</div>
                         <h4 class={css({
                             fontSize: "1.2rem",
                             color: "#333",
                             margin: "0.5rem 0",
+                            paddingTop: "0.5rem",
                         })}>{item.title}</h4>
                         <p class={css({
                             color: "#555",
@@ -105,6 +106,6 @@ const items = [
                     </div>
                 </div>
             ))}
-        </ul>
+        </div>
     </SectionContent>
 </Section>
