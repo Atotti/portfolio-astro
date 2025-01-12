@@ -25,18 +25,6 @@ section {
     animation: fadeIn 1s ease-in-out;
 }
 
-
-/* リンク */
-a {
-    color: #ff7593;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #ff9cb1;
-    text-decoration: none;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -59,39 +47,69 @@ a:hover {
 
 
 /* ブログ共通スタイル */
-.blog-list {
-  list-style: none;
-  padding: 0;
+h2 {
+  font-family: 'Zen Kaku Gothic New variant0', sans-serif;
+  font-size: 1.8rem;
+  color: #404950;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #828fff;
+  padding-bottom: 0.5rem;
 }
 
-.blog-list li {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border-radius: 8px;
-  background: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.blog-list li:hover {
-  transform: translateY(-3px);
-}
-
-.blog-list h2 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.blog-list p {
-  margin: 0.5rem 0;
+li {
+  list-style: disc;
+  margin-left: 20px;
   color: #555;
+  line-height: 1.8;
 }
 
-.blog-list a {
+
+/* リンク */
+a {
+  color: #ff7593;
   text-decoration: none;
-  color: #0077cc;
 }
 
-.blog-list a:hover {
-  text-decoration: underline;
+a:hover {
+  color: #ff9cb1;
+  text-decoration: none;
+}
+
+/* リスト */
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+/* 引用 */
+blockquote {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #828fff;
+  background-color: #f9f9f9;
+  color: #555;
+  font-style: italic;
+}
+
+/* コード */
+pre, code {
+  font-family: 'Courier New', monospace;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: #d14;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+
 }

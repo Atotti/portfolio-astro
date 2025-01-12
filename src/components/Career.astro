@@ -2,14 +2,14 @@
 import SectionTitle from './SectionTitle.astro';
 import Section from './Atoms/Section.astro';
 import SectionContent from './Atoms/SectionContent.astro';
-import { css } from '../../styled-system/css'
+import { css } from '../../styled-system/css';
 
 const items = [
     { year: "April 2022", title: "大学入学", description: "東京都立大学に入学し、コンピュータサイエンスを専攻" },
     { year: "August 2023", title: "Software engineer Intern at pixiv Inc.", description: "pixivコミックのバックエンド開発に携わる" },
     { year: "February 2024", title: "Software engineer Intern at Monoxer", description: "iOS, Android, Web Frotend, Backend フルスタックで開発"},
     { year: "August 2024", title: "Software engineer Intern at COLOPL, inc.", description: "ソーシャルゲームのサーバサイド開発を経験"},
-    { year: "November 2024", title: "Research scientist Intern at CyberAgent AI Lab", description: "LLMの"}
+    { year: "November 2024", title: "Research scientist Intern at CyberAgent AI Lab", description: "言語生成AIの開発・実装"}
 ];
 ---
 
@@ -21,7 +21,6 @@ const items = [
             padding: 0,
             margin: 0,
             position: "relative",
-            borderLeft: "none",
             _before: {
                 content: "''",
                 position: "absolute",
@@ -31,123 +30,81 @@ const items = [
                 width: "3px",
                 background: "#0077cc",
                 transform: "translateX(-50%)",
-                zIndex: 1
-            }
+                zIndex: 1,
+                "@media (max-width: 900px)": {
+                    left: "0%",
+                },
+            },
         })}>
             {items.map((item, index) => (
-                <li class={`career-item ${index % 2 === 0 ? "left" : "right"}`}>
+                <div
+                    class={css({
+                        position: "relative",
+                        width: "100%",
+                        padding: "20px",
+                        textAlign: index % 2 === 0 ? "left" : "right",
+                        _after: {
+                            content: "''",
+                            position: "absolute",
+                            top: "90px",
+                            left: "50%",
+                            width: "50%",
+                            height: "1px",
+                            background: "#0077cc",
+                            zIndex: 1,
+                            transform: index % 2 === 1 ? "translateX(0)" : "translateX(-100%)",
+                            "@media (max-width: 900px)": {
+                                transform: "translateX(-100%)",
+                            },
+                        },
+                        _before: {
+                            content: "''",
+                            position: "absolute",
+                            top: "60px",
+                            width: "12px",
+                            height: "12px",
+                            background: "#0077cc",
+                            borderRadius: "50%",
+                            zIndex: 2,
+                            left: index % 2 === 0 ? "calc(50% - 6px)" : "auto",
+                            right: index % 2 !== 0 ? "calc(50% - 6px)" : "auto",
+                            "@media (max-width: 900px)": {
+                                left: "-6px",
+                            },
+                        },
+                        "@media (max-width: 900px)": {
+                            textAlign: "left",
+                        },
+                    })}
+                >
                     <div class={css({
                         position: "relative",
                         zIndex: 2,
                         padding: "20px",
                         borderRadius: "8px",
                         display: "inline-block",
-                        width: "80%"
+                        width: "50%",
+                        "@media (max-width: 900px)": {
+                            width: "100%",
+                        },
                     })}>
                         <h3 class={css({
                             color: "#0077cc",
                             fontWeight: 100,
-                            fontSize: "1.5rem"
+                            fontSize: "1.5rem",
                         })}>{item.year}</h3>
-                        <h4 class="career-title">{item.title}</h4>
-                        <p class="career-description">{item.description}</p>
+                        <h4 class={css({
+                            fontSize: "1.2rem",
+                            color: "#333",
+                            margin: "0.5rem 0",
+                        })}>{item.title}</h4>
+                        <p class={css({
+                            color: "#555",
+                            lineHeight: 1.8,
+                        })}>{item.description}</p>
                     </div>
-                </li>
+                </div>
             ))}
         </ul>
     </SectionContent>
 </Section>
-
-<style>
-
-
-.career-item {
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.career-item.left {
-    text-align: left;
-    padding-left: 50%; /* 左側に配置 */
-}
-
-.career-item.right {
-    text-align: left;
-    padding-right: 50%; /* 右側に配置 */
-}
-
-.career-item:after {
-    content: "";
-    position: absolute;
-    top: 105px; /* ドットの下に配置 */
-    left: 50%; /* 中央に配置 */
-    width: 50%; /* 線の長さ */
-    height: 1px; /* 線の幅 */
-    background: #0077cc; /* 線の色 */
-    z-index: 1;
-}
-
-.career-item.left:after {
-    left: 50%; /* 左側の線を配置 */
-}
-
-.career-item.right:after {
-    left: -2px; /* 右側の線を配置 */
-}
-
-
-.career-item:before {
-    content: "";
-    position: absolute;
-    top: 75px;
-    width: 12px;
-    height: 12px;
-    background: #0077cc; /* 点の色 */
-    border-radius: 50%;
-    z-index: 2;
-}
-
-.career-item.left:before {
-    right: calc(50% - 6px); /* 中央から左にずらす */
-}
-
-.career-item.right:before {
-    left: calc(50% - 6px); /* 中央から右にずらす */
-}
-
-@media (max-width: 900px) {
-    .career-item {
-        width: 100%;
-        text-align: left;
-        padding: 0 20px;
-    }
-
-    .career-item.left, .career-item.right {
-        padding: 0 20px;
-    }
-
-    .career-timeline:before {
-        left: 20px; /* タイムラインを左端に配置 */
-    }
-
-    .career-item.left:before {
-        left: 14px; /* 点を左端に配置 */
-        top: 54px; /* 点を上に配置 */
-    }
-
-    .career-item.right:before {
-        left: 14px; /* 点を右端に配置 */
-        top: 54px; /* 点を上に配置 */
-    }
-
-    .career-item:after {
-        width: 0; /* 線を非表示 */
-    }
-
-    .career-item.left:after {
-        left: 20px; /* 左側の線を左端に配置 */
-    }
-}
-</style>
