@@ -1,9 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry, type ContentCollectionKey } from 'astro:content';
 
 // 記事一覧を取得
-const posts = (await getCollection('posts')).sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+const posts = (await getCollection('posts')).sort((a: ContentCollectionKey, b: ContentCollectionKey) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
 
 <Layout>
@@ -40,7 +40,7 @@ const posts = (await getCollection('posts')).sort((a, b) => new Date(b.data.pubD
 
 /* セクションタイトル */
 .section-title {
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 2rem;
   text-align: center;
   color: #404950;
