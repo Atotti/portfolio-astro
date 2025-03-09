@@ -1,0 +1,120 @@
+---
+import { css } from '../../styled-system/css'
+---
+
+<div class={css({
+  "marginBottom": "2rem",
+  "padding": "16px",
+  "borderRadius": "8px",
+  "animation": "fadeIn 1s ease-in-out",
+  "display": "block",
+  "unicodeBidi": "isolate"
+})}
+>
+  <div class="business-card-container">
+    <div class="business-card">
+      <div class="business-card-inner">
+        <div class="business-card-front">
+          <img src="/NLP2025-front.svg" alt="名刺表面" />
+        </div>
+        <div class="business-card-back">
+          <img src="/NLP2025-back.svg" alt="名刺裏面" />
+        </div>
+      </div>
+    </div>
+      <div class="card-instruction">クリックで裏表を切り替え</div>
+  </div>
+</div>
+
+<script>
+  // 名刺をクリックしたときの処理
+  document.addEventListener('DOMContentLoaded', () => {
+    const card = document.querySelector('.business-card');
+    if (card) {
+      card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+      });
+    }
+  });
+</script>
+
+<style>
+  .business-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0;
+    perspective: 1000px;
+  }
+
+  .business-card {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px; /* デフォルト（モバイル～タブレット）向け */
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  @media (min-width: 768px) {
+    .business-card {
+      max-width: 700px; /* 拡大表示 */
+    }
+  }
+
+  .business-card.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .business-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+  }
+
+  .business-card-front,
+  .business-card-back {
+    position: relative;  /* 通常フローで高さを持つのは表面だけ */
+    width: 100%;
+    height: auto;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .business-card-front {
+    background-color: #fff;
+    color: #000;
+    z-index: 2;
+  }
+
+  .business-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background-color: #fff;
+    color: #000;
+  }
+
+  .business-card-front img,
+  .business-card-back img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* 念のため */
+  }
+
+  .card-instruction {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+  }
+
+</style>
