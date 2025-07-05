@@ -1,0 +1,1295 @@
+- title: "金色のガッシュベル"
+  watchedDate: "2017-03-15"
+  watchCount: 3
+  genres: ["アクション", "コメディ"]
+  comment: "心に残る名作。何度見ても泣ける。"
+- title: "キルミーベイベー"
+  watchedDate: "2017-04-20"
+  watchCount: 5
+  genres: ["日常", "ギャグ"]
+  comment: "中毒性が高い。やすなはかわいい。"
+- title: "のんのんびより"
+  watchedDate: "2017-05-10"
+  watchCount: 2
+  genres: ["日常", "ほのぼの"]
+  comment: "田舎の風景とキャラクターに癒される。"
+- title: "のんのんびよりりぴーと"
+  watchedDate: "2017-06-15"
+  watchCount: 1
+  genres: ["日常", "ほのぼの"]
+  comment: "のんのんびよりの続編。相変わらず癒される。"
+- title: "ドラゴンボール"
+  watchedDate: "2017-07-01"
+  watchCount: 2
+  genres: ["アクション", "バトル"]
+  comment: "永遠の名作。少年時代の思い出。"
+- title: "ドラゴンボールZ"
+  watchedDate: "2017-08-12"
+  watchCount: 3
+  genres: ["アクション", "バトル"]
+  comment: "戦闘シーンが迫力満点。"
+- title: "ドラゴンボールGT"
+  watchedDate: "2017-09-08"
+  watchCount: 1
+  genres: ["アクション", "バトル"]
+  comment: "賛否両論だが個人的には好き。"
+- title: "血液型くん"
+  watchedDate: "2017-10-05"
+  watchCount: 1
+  genres: ["コメディ", "ショート"]
+  comment: "短編アニメの面白さ。"
+- title: "となりの関くん"
+  watchedDate: "2017-11-20"
+  watchCount: 2
+  genres: ["コメディ", "日常"]
+  comment: "授業中の妄想が面白い。"
+- title: "ごちうさ"
+  watchedDate: "2017-12-25"
+  watchCount: 4
+  genres: ["日常", "ほのぼの"]
+  comment: "心温まるカフェアニメ。"
+- title: "ラブライブ"
+  watchedDate: "2018-01-15"
+  watchCount: 2
+  genres: ["音楽", "青春"]
+  comment: "アイドルアニメの金字塔。"
+- title: "宇宙戦艦ヤマト2199"
+  watchedDate: "2018-02-10"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "リメイク作品の傑作。"
+- title: "宇宙戦艦ヤマト2202"
+  watchedDate: "2018-03-20"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "2199の続編。期待通りの出来。"
+- title: "暗殺教室"
+  watchedDate: "2018-04-08"
+  watchCount: 1
+  genres: ["コメディ", "学園"]
+  comment: "先生と生徒の絆に感動。"
+- title: "中二病でも恋がしたい"
+  watchedDate: "2018-05-12"
+  watchCount: 3
+  genres: ["コメディ", "恋愛"]
+  comment: "中二病あるある。六花が可愛い。"
+- title: "中二病でも恋がしたい二期"
+  watchedDate: "2018-06-05"
+  watchCount: 2
+  genres: ["コメディ", "恋愛"]
+  comment: "一期に続いて面白い。"
+- title: "艦これ"
+  watchedDate: "2018-07-18"
+  watchCount: 1
+  genres: ["ミリタリー", "日常"]
+  comment: "ゲーム原作アニメ。"
+- title: "GATE 自衛隊 彼の地にて、"
+  watchedDate: "2018-08-22"
+  watchCount: 1
+  genres: ["ファンタジー", "ミリタリー"]
+  comment: "異世界と現代の融合が面白い。"
+- title: "とある科学の超電磁砲"
+  watchedDate: "2018-09-15"
+  watchCount: 2
+  genres: ["アクション", "SF"]
+  comment: "御坂美琴が主人公のスピンオフ。"
+- title: "とある科学の超電磁砲S"
+  watchedDate: "2018-10-10"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "シスターズ編が感動的。"
+- title: "とある魔術の禁書目録"
+  watchedDate: "2018-11-25"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "能力者バトルの代表作。"
+- title: "とある魔術の禁書目録II"
+  watchedDate: "2018-12-08"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "一期に続いて面白い。"
+- title: "劇場版 とある魔術の禁書目録"
+  watchedDate: "2019-01-12"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "劇場版ならではの迫力。"
+- title: "涼宮ハルヒの憂鬱"
+  watchedDate: "2019-02-14"
+  watchCount: 3
+  genres: ["コメディ", "SF"]
+  comment: "アニメ界に革命を起こした作品。"
+- title: "涼宮ハルヒの消失"
+  watchedDate: "2019-03-05"
+  watchCount: 2
+  genres: ["ドラマ", "SF"]
+  comment: "劇場版の最高傑作の一つ。"
+- title: "はたらく細胞"
+  watchedDate: "2019-04-18"
+  watchCount: 1
+  genres: ["コメディ"]
+  comment: "楽しく学べる教育アニメ。"
+- title: "ワンパンマン"
+  watchedDate: "2019-05-22"
+  watchCount: 2
+  genres: ["アクション", "コメディ"]
+  comment: "最強ヒーローの悩み。"
+- title: "ワンパンマン二期"
+  watchedDate: "2019-06-15"
+  watchCount: 1
+  genres: ["アクション", "コメディ"]
+  comment: "一期ほどではないが面白い。"
+- title: "ガールズアンドパンツァー"
+  watchedDate: "2019-07-08"
+  watchCount: 2
+  genres: ["ミリタリー", "青春"]
+  comment: "戦車道という新しいスポーツ。"
+- title: "劇場版ガールズアンドパンツァー"
+  watchedDate: "2019-08-20"
+  watchCount: 1
+  genres: ["ミリタリー", "青春"]
+  comment: "劇場版で更にパワーアップ。"
+- title: "とある魔術の禁書目録IIl"
+  watchedDate: "2019-09-12"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "三期も面白い。"
+- title: "ガールズアンドパンツァー最終章"
+  watchedDate: "2019-10-25"
+  watchCount: 1
+  genres: ["ミリタリー", "青春"]
+  comment: "最終章の迫力は圧巻。"
+- title: "Angel Beats!"
+  watchedDate: "2019-11-18"
+  watchCount: 2
+  genres: ["ドラマ"]
+  comment: "死後の世界での青春ドラマ。"
+- title: "あの日見た花の名前を僕達はまだ知らない"
+  watchedDate: "2019-12-01"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "感動の最終回は必見。"
+- title: "この素晴らしい世界に祝福を!"
+  watchedDate: "2020-01-15"
+  watchCount: 4
+  genres: ["異世界", "コメディ", "ファンタジー"]
+  comment: "ギャグのキレが最高。"
+- title: "5等分の花嫁"
+  watchedDate: "2020-02-20"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "五つ子との恋愛コメディ。"
+- title: "Charlotte"
+  watchedDate: "2020-03-10"
+  watchCount: 1
+  genres: ["ドラマ", "青春"]
+  comment: "Key作品らしい感動作。"
+- title: "Reゼロから始める異世界生活"
+  watchedDate: "2020-04-25"
+  watchCount: 1
+  genres: ["異世界", "ドラマ"]
+  comment: "死に戻りという設定が秀逸。"
+- title: "日常"
+  watchedDate: "2020-05-08"
+  watchCount: 2
+  genres: ["コメディ", "日常"]
+  comment: "シュールなギャグが面白い。"
+- title: "とある科学の一方通行"
+  watchedDate: "2020-06-12"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "一方通行が主人公のスピンオフ。"
+- title: "らきすた"
+  watchedDate: "2020-07-05"
+  watchCount: 3
+  genres: ["日常", "コメディ"]
+  comment: "オタク文化への愛が詰まった作品。"
+- title: "CLANNAD"
+  watchedDate: "2020-08-18"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "Key作品の代表作。"
+- title: "這いよれニャル子さん"
+  watchedDate: "2020-09-22"
+  watchCount: 1
+  genres: ["コメディ", "SF"]
+  comment: "クトゥルフ神話のパロディ。"
+- title: "這いよれニャル子さんW"
+  watchedDate: "2020-10-15"
+  watchCount: 1
+  genres: ["コメディ", "SF"]
+  comment: "二期も面白い。"
+- title: "這いよれニャル子さんF"
+  watchedDate: "2020-11-08"
+  watchCount: 1
+  genres: ["コメディ", "SF"]
+  comment: "最終シーズン。"
+- title: "魔法科高校の劣等生"
+  watchedDate: "2020-12-20"
+  watchCount: 1
+  genres: ["アクション", "学園"]
+  comment: "お兄様が最強。"
+- title: "劇場版 魔法科高校の劣等生"
+  watchedDate: "2021-01-10"
+  watchCount: 1
+  genres: ["アクション", "学園"]
+  comment: "劇場版で更にパワーアップ。"
+- title: "コードギアス反逆のルルーシュ"
+  watchedDate: "2021-02-14"
+  watchCount: 2
+  genres: ["ドラマ", "ロボット"]
+  comment: "戦略とドラマが絶妙。"
+- title: "コードギアス反逆のルルーシュR2"
+  watchedDate: "2021-03-05"
+  watchCount: 1
+  genres: ["ドラマ", "ロボット"]
+  comment: "二期も最高。"
+- title: "コードギアス亡国のアキト"
+  watchedDate: "2021-04-18"
+  watchCount: 1
+  genres: ["ドラマ", "ロボット"]
+  comment: "外伝作品。"
+- title: "かぐや様は告らせたい"
+  watchedDate: "2021-05-22"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "頭脳戦ラブコメ。"
+- title: "寄宿学校のジュリエット"
+  watchedDate: "2021-06-15"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "禁断の恋愛。"
+- title: "Rewrite"
+  watchedDate: "2021-07-08"
+  watchCount: 1
+  genres: ["ドラマ", "SF"]
+  comment: "Key作品の一つ。"
+- title: "ありふれた職業で世界最強"
+  watchedDate: "2021-08-20"
+  watchCount: 1
+  genres: ["異世界", "アクション"]
+  comment: "異世界転生もの。"
+- title: "Rewrite2期"
+  watchedDate: "2021-09-12"
+  watchCount: 1
+  genres: ["ドラマ", "SF"]
+  comment: "二期で完結。"
+- title: "アズールレーン"
+  watchedDate: "2021-10-25"
+  watchCount: 1
+  genres: ["ミリタリー", "日常"]
+  comment: "ゲーム原作アニメ。"
+- title: "ポプテピピック"
+  watchedDate: "2021-11-18"
+  watchCount: 1
+  genres: ["コメディ", "ショート"]
+  comment: "クソアニメの代表格。"
+- title: "魔法少女まどかマギカ"
+  watchedDate: "2021-12-01"
+  watchCount: 2
+  genres: ["ドラマ"]
+  comment: "魔法少女の概念を変えた作品。"
+- title: "魔法少女まどかマギカ 叛逆の物語"
+  watchedDate: "2022-01-15"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "劇場版で更に深い物語。"
+- title: "リトルバスターズ！"
+  watchedDate: "2022-02-20"
+  watchCount: 1
+  genres: ["ドラマ", "青春"]
+  comment: "Key作品の青春群像劇。"
+- title: "リトルバスターズ！Refrain"
+  watchedDate: "2022-03-10"
+  watchCount: 1
+  genres: ["ドラマ", "青春"]
+  comment: "感動の二期。"
+- title: "リトルバスターズ！EX"
+  watchedDate: "2022-04-25"
+  watchCount: 1
+  genres: ["ドラマ", "青春"]
+  comment: "完結編。"
+- title: "鬼滅の刃"
+  watchedDate: "2022-05-08"
+  watchCount: 1
+  genres: ["アクション", "ドラマ"]
+  comment: "社会現象となった作品。"
+- title: "ゆるキャンΔ"
+  watchedDate: "2022-06-12"
+  watchCount: 2
+  genres: ["日常", "ほのぼの"]
+  comment: "キャンプに行きたくなる。"
+- title: "僕だけがいない街"
+  watchedDate: "2022-07-05"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "タイムリープサスペンス。"
+- title: "宇宙より遠い場所"
+  watchedDate: "2022-08-18"
+  watchCount: 1
+  genres: ["青春", "ドラマ"]
+  comment: "南極を目指す少女たちの物語。"
+- title: "きんいろモザイク"
+  watchedDate: "2022-09-22"
+  watchCount: 1
+  genres: ["日常", "コメディ"]
+  comment: "国際交流日常系。"
+- title: "Re Life"
+  watchedDate: "2022-10-15"
+  watchCount: 1
+  genres: ["ドラマ", "青春"]
+  comment: "大人の青春やり直し。"
+- title: "ラブライブ2期"
+  watchedDate: "2022-11-08"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "一期に続いて面白い。"
+- title: "ブラック・ブレット"
+  watchedDate: "2022-12-20"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "ディストピアSF。"
+- title: "エロマンガ先生"
+  watchedDate: "2023-01-10"
+  watchCount: 1
+  genres: ["コメディ", "恋愛"]
+  comment: "俺妹の作者の新作。"
+- title: "planetarian-ちいさなほしのゆめ-"
+  watchedDate: "2023-02-14"
+  watchCount: 1
+  genres: ["ドラマ", "SF"]
+  comment: "Key作品の短編。"
+- title: "planetarian~星の人~"
+  watchedDate: "2023-03-05"
+  watchCount: 1
+  genres: ["ドラマ", "SF"]
+  comment: "planetarianの続編。"
+- title: "冴えない彼女の育てかた"
+  watchedDate: "2023-04-18"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "ギャルゲー制作ラブコメ。"
+- title: "恋する小惑星"
+  watchedDate: "2023-05-22"
+  watchCount: 1
+  genres: ["日常", "青春"]
+  comment: "天文部の日常。"
+- title: "マギアレコード"
+  watchedDate: "2023-06-15"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "まどマギのスピンオフ。"
+- title: "とある科学の超電磁砲T"
+  watchedDate: "2023-07-08"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "三期も面白い。"
+- title: "へやキャン"
+  watchedDate: "2023-08-20"
+  watchCount: 1
+  genres: ["日常", "ショート"]
+  comment: "ゆるキャンのショート版。"
+- title: "ダーウィンズゲーム"
+  watchedDate: "2023-09-12"
+  watchCount: 1
+  genres: ["アクション", ]
+  comment: "デスゲーム系。"
+- title: "氷菓"
+  watchedDate: "2023-10-25"
+  watchCount: 1
+  genres: ["ミステリー", "青春"]
+  comment: "古典部の推理劇。"
+- title: "約束のネバーランド"
+  watchedDate: "2023-11-18"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "脱出サスペンス。"
+- title: "ハロー!!きんいろモザイク"
+  watchedDate: "2023-12-01"
+  watchCount: 1
+  genres: ["日常", "コメディ"]
+  comment: "きんモザの二期。"
+- title: "Dr. Stone"
+  watchedDate: "2024-01-15"
+  watchCount: 1
+  genres: ["SF"]
+  comment: "科学で世界を救う。"
+- title: "デート・ア・ライブ"
+  watchedDate: "2024-02-20"
+  watchCount: 1
+  genres: ["恋愛", "SF"]
+  comment: "精霊とのデート。"
+- title: "デート・ア・ライブII"
+  watchedDate: "2024-03-10"
+  watchCount: 1
+  genres: ["恋愛", "SF"]
+  comment: "二期も面白い。"
+- title: "デート・ア・ライブIII"
+  watchedDate: "2024-04-25"
+  watchCount: 1
+  genres: ["恋愛", "SF"]
+  comment: "三期で更に展開。"
+- title: "りゅうおうのおしごと！"
+  watchedDate: "2024-05-08"
+  watchCount: 1
+  genres: ["コメディ"]
+  comment: "将棋アニメの傑作。"
+- title: "さばけぶっ"
+  watchedDate: "2024-06-12"
+  watchCount: 1
+  genres: ["アクション", "コメディ"]
+  comment: "サバゲーアニメ。"
+- title: "終わりのセラフ"
+  watchedDate: "2024-07-05"
+  watchCount: 1
+  genres: ["アクション", "ドラマ"]
+  comment: "吸血鬼との戦い。"
+- title: "まちカドまぞく"
+  watchedDate: "2024-08-18"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "魔族と魔法少女の日常。"
+- title: "Air"
+  watchedDate: "2024-09-22"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "Key作品の名作。"
+- title: "kanon"
+  watchedDate: "2024-10-15"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "Key作品の原点。"
+- title: "ハイスクール・フリート"
+  watchedDate: "2024-11-08"
+  watchCount: 1
+  genres: ["ミリタリー", "青春"]
+  comment: "艦船と少女たちの物語。"
+- title: "ハイスクール・フリート OVA"
+  watchedDate: "2024-12-20"
+  watchCount: 1
+  genres: ["ミリタリー", "青春"]
+  comment: "OVAで更に深く。"
+- title: "エヴァンゲリオン新劇場版　序･破･Q"
+  watchedDate: "2013-02-10"
+  watchCount: 1
+  genres: ["SF", "ロボット"]
+  comment: "新劇場版の迫力。"
+- title: "かぐや様は告らせたい？"
+  watchedDate: "2020-06-15"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "二期も面白い。"
+- title: "刀使ノ巫女"
+  watchedDate: "2018-06-25"
+  watchCount: 1
+  genres: ["アクション", "学園"]
+  comment: "刀を使う巫女たち。"
+- title: "灼熱の卓球娘"
+  watchedDate: "2017-01-15"
+  watchCount: 1
+  genres: ["スポーツ", "青春"]
+  comment: "卓球アニメ。"
+- title: "血液型君"
+  watchedDate: "2014-05-20"
+  watchCount: 1
+  genres: ["コメディ", "ショート"]
+  comment: "血液型ネタのショート。"
+- title: "やわらか戦車"
+  watchedDate: "2006-12-15"
+  watchCount: 1
+  genres: ["コメディ", "ショート"]
+  comment: "ゆるキャラアニメ。"
+- title: "夏目友人帳"
+  watchedDate: "2008-10-10"
+  watchCount: 1
+  genres: ["ドラマ", "ほのぼの"]
+  comment: "妖怪との心温まる物語。"
+- title: "境界の彼方"
+  watchedDate: "2013-12-20"
+  watchCount: 1
+  genres: ["アクション", "ドラマ"]
+  comment: "京アニ作品の美麗な映像。"
+- title: "境界の彼方 未来編"
+  watchedDate: "2015-05-15"
+  watchCount: 1
+  genres: ["アクション", "ドラマ"]
+  comment: "劇場版で完結。"
+- title: "冴えない彼女の育て方♭"
+  watchedDate: "2017-07-05"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "二期で更に進展。"
+- title: "アクセル･ワールド"
+  watchedDate: "2012-10-15"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "VRバトルアニメ。"
+- title: "アクセルワールドアンリミテッドバースト"
+  watchedDate: "2016-08-20"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "劇場版で更に展開。"
+- title: "緋弾のアリア"
+  watchedDate: "2011-08-15"
+  watchCount: 1
+  genres: ["アクション", "学園"]
+  comment: "探偵学園アクション。"
+- title: "緋弾のアリアAA"
+  watchedDate: "2016-03-20"
+  watchCount: 1
+  genres: ["アクション", "学園"]
+  comment: "スピンオフ作品。"
+- title: "プロメア"
+  watchedDate: "2019-12-10"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "トリガーの映画作品。"
+- title: "コードギアス 復活のルルーシュ"
+  watchedDate: "2020-01-25"
+  watchCount: 1
+  genres: ["ドラマ", "ロボット"]
+  comment: "ルルーシュの復活。"
+- title: "神様になった日"
+  watchedDate: "2021-02-08"
+  watchCount: 1
+  genres: ["ドラマ", "SF"]
+  comment: "Key作品の最新作。"
+- title: "魔法科高校の劣等生未来訪問者編"
+  watchedDate: "2024-08-15"
+  watchCount: 1
+  genres: ["アクション", "学園"]
+  comment: "続編シリーズ。"
+- title: "ひぐらしのなく頃に業"
+  watchedDate: "2021-03-15"
+  watchCount: 1
+  genres: ["ミステリー"]
+  comment: "ひぐらしの新章。"
+- title: "100万の命の上に俺は生きている"
+  watchedDate: "2021-01-20"
+  watchCount: 1
+  genres: ["異世界", "アクション"]
+  comment: "異世界転生バトル。"
+- title: "無能なナナ"
+  watchedDate: "2021-02-10"
+  watchCount: 1
+  genres: ["学園"]
+  comment: "騙し合いサスペンス。"
+- title: "コードギアス復活のルルーシュ"
+  watchedDate: "2020-08-25"
+  watchCount: 1
+  genres: ["ドラマ", "ロボット"]
+  comment: "ルルーシュの新たな物語。"
+- title: "呪術廻戦"
+  watchedDate: "2021-04-05"
+  watchCount: 1
+  genres: ["アクション"]
+  comment: "呪術師のバトル。"
+- title: "劇場版ハイスクール・フリート"
+  watchedDate: "2020-05-15"
+  watchCount: 1
+  genres: ["ミリタリー", "青春"]
+  comment: "劇場版で更に展開。"
+- title: "色づく世界の明日から"
+  watchedDate: "2019-02-20"
+  watchCount: 1
+  genres: ["ドラマ", "青春"]
+  comment: "色彩豊かな青春ドラマ。"
+- title: "まえせつ!"
+  watchedDate: "2021-03-25"
+  watchCount: 1
+  genres: ["コメディ", "青春"]
+  comment: "漫才アニメ。"
+- title: "ご注文はうさぎですかBLOOM"
+  watchedDate: "2021-01-15"
+  watchCount: 1
+  genres: ["日常", "ほのぼの"]
+  comment: "ごちうさの続編。"
+- title: "蒼の彼方のフォーリズム"
+  watchedDate: "2016-06-20"
+  watchCount: 1
+  genres: ["スポーツ", "青春"]
+  comment: "空中競技アニメ。"
+- title: "とらドラ!"
+  watchedDate: "2019-08-10"
+  watchCount: 1
+  genres: ["恋愛", "学園"]
+  comment: "学園ラブコメの名作。"
+- title: "ソードアート・オンライン"
+  watchedDate: "2019-12-08"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "VRMMORPGの先駆け。"
+- title: "ソードアート・オンラインⅡ"
+  watchedDate: "2020-01-12"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "二期も面白い。"
+- title: "ソードアート・オンライン アリシゼーション"
+  watchedDate: "2020-04-15"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "長編シリーズ。"
+- title: "ソードアート・オンライン アリシゼーション"
+  watchedDate: "2020-06-18"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "アリシゼーション完結。"
+- title: "ソードアート・オンライン Extra Edition"
+  watchedDate: "2020-02-22"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "特別編。"
+- title: "SSSS.GRIDMAN"
+  watchedDate: "2019-01-20"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "特撮アニメ。"
+- title: "劇場版 ソードアート・オンライン –オーディナル・スケール-"
+  watchedDate: "2018-05-15"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "劇場版オリジナル。"
+- title: "ワールドトリガー"
+  watchedDate: "2019-06-10"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "異世界侵略バトル。"
+- title: "ワールドトリガー2nd"
+  watchedDate: "2021-06-25"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "二期で更に展開。"
+- title: "続 夏目友人帳"
+  watchedDate: "2018-08-20"
+  watchCount: 1
+  genres: ["ドラマ", "ほのぼの"]
+  comment: "夏目の続編。"
+- title: "Dr. Stone 2期"
+  watchedDate: "2021-07-15"
+  watchCount: 1
+  genres: ["SF"]
+  comment: "科学王国の発展。"
+- title: "ゆるキャン△ SEAZON2"
+  watchedDate: "2021-05-10"
+  watchCount: 1
+  genres: ["日常", "ほのぼの"]
+  comment: "ゆるキャンの二期。"
+- title: "PUIPUI モルカー"
+  watchedDate: "2021-04-08"
+  watchCount: 1
+  genres: ["コメディ", "ショート"]
+  comment: "モルモットの車。"
+- title: "五等分の花嫁∬"
+  watchedDate: "2021-06-20"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "五等分の二期。"
+- title: "のんのんびよりのんすとっぷ"
+  watchedDate: "2021-05-25"
+  watchCount: 1
+  genres: ["日常", "ほのぼの"]
+  comment: "のんのんびよりの三期。"
+- title: "ようこそ実力至上主義の教室へ"
+  watchedDate: "2018-10-15"
+  watchCount: 1
+  genres: ["学園"]
+  comment: "実力主義の学園。"
+- title: "Vivy -Fluorite Eye's Song-"
+  watchedDate: "2021-08-12"
+  watchCount: 1
+  genres: ["SF", "音楽"]
+  comment: "AIシンガーの物語。"
+- title: "SSSS.DYNAZENON"
+  watchedDate: "2021-08-25"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "グリッドマンの続編。"
+- title: "86-エイティシックス-"
+  watchedDate: "2021-10-18"
+  watchCount: 1
+  genres: ["SF", "ドラマ"]
+  comment: "戦争の現実を描く。"
+- title: "甘城ブリリアントパーク"
+  watchedDate: "2018-03-25"
+  watchCount: 1
+  genres: ["コメディ", "ファンタジー"]
+  comment: "遊園地再建コメディ。"
+- title: "中二病でも恋がしたい!-take on me-"
+  watchedDate: "2018-06-10"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "劇場版で完結。"
+- title: "この素晴らしい世界に祝福を!2"
+  watchedDate: "2018-01-15"
+  watchCount: 1
+  genres: ["異世界", "コメディ"]
+  comment: "二期も面白い。"
+- title: "戦闘員派遣します"
+  watchedDate: "2021-09-15"
+  watchCount: 1
+  genres: ["コメディ", "アクション"]
+  comment: "このすば作者の新作。"
+- title: "プリンセス・プリンシパル"
+  watchedDate: "2018-02-20"
+  watchCount: 1
+  genres: ["アクション", "スパイ"]
+  comment: "スパイアクション。"
+- title: "hello world"
+  watchedDate: "2020-03-10"
+  watchCount: 1
+  genres: ["SF", "恋愛"]
+  comment: "SF恋愛映画。"
+- title: "小林さんちのメイドラゴン"
+  watchedDate: "2018-04-15"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "ドラゴンメイドの日常。"
+- title: "恋と選挙とチョコレート"
+  watchedDate: "2017-12-08"
+  watchCount: 1
+  genres: ["恋愛", "学園"]
+  comment: "学園選挙ラブコメ。"
+- title: "小林さんちのメイドラゴンS"
+  watchedDate: "2021-11-20"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "メイドラゴンの二期。"
+- title: "100万の命の上に俺は生きている2"
+  watchedDate: "2021-08-15"
+  watchCount: 1
+  genres: ["異世界", "アクション"]
+  comment: "二期で更に展開。"
+- title: "白い砂のアクアトープ"
+  watchedDate: "2021-12-25"
+  watchCount: 1
+  genres: ["青春"]
+  comment: "水族館のお仕事アニメ。"
+- title: "探偵はもう死んでいる"
+  watchedDate: "2021-10-05"
+  watchCount: 1
+  genres: ["ミステリー", "コメディ"]
+  comment: "探偵コメディ。"
+- title: "ジパング"
+  watchedDate: "2019-07-20"
+  watchCount: 1
+  genres: ["ミリタリー", "SF"]
+  comment: "現代戦艦が戦時中に。"
+- title: "機巧少女は傷つかない"
+  watchedDate: "2018-09-10"
+  watchCount: 1
+  genres: ["アクション", "学園"]
+  comment: "人形使いバトル。"
+- title: "ラブライブスーパースター"
+  watchedDate: "2021-12-15"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "ラブライブ新シリーズ。"
+- title: "干物妹!うまるちゃん"
+  watchedDate: "2017-05-18"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "干物妹の日常。"
+- title: "魔王学院の不適合者"
+  watchedDate: "2020-12-10"
+  watchCount: 1
+  genres: ["ファンタジー", "学園"]
+  comment: "魔王の転生。"
+- title: "アブソリュート・デュオ"
+  watchedDate: "2016-08-25"
+  watchCount: 1
+  genres: ["アクション", "学園"]
+  comment: "武器学園バトル。"
+- title: "プリンセス・プリンシパルCrownHandler"
+  watchedDate: "2022-05-20"
+  watchCount: 1
+  genres: ["アクション", "スパイ"]
+  comment: "プリプリの劇場版。"
+- title: "ソードアート・オンライン プログレッシブ"
+  watchedDate: "2022-01-15"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "SAOの詳細版。"
+- title: "ワールドトリガー3rd"
+  watchedDate: "2022-02-10"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "三期で更に展開。"
+- title: "無職転生 第1クール"
+  watchedDate: "2021-06-20"
+  watchCount: 1
+  genres: ["異世界", "ファンタジー"]
+  comment: "異世界転生の最高峰。"
+- title: "無職転生 第2クール"
+  watchedDate: "2022-02-25"
+  watchCount: 1
+  genres: ["異世界", "ファンタジー", "ドラマ"]
+  comment: "作画とストーリーが最高レベル。"
+- title: "天才王子の赤字国家再生術"
+  watchedDate: "2022-06-15"
+  watchCount: 1
+  genres: ["ファンタジー"]
+  comment: "国家運営ファンタジー。"
+- title: "失格紋の最強賢者"
+  watchedDate: "2022-05-08"
+  watchCount: 1
+  genres: ["ファンタジー", "アクション"]
+  comment: "転生賢者の物語。"
+- title: "banana fish"
+  watchedDate: "2019-03-20"
+  watchCount: 1
+  genres: ["ドラマ", "アクション"]
+  comment: "ハードボイルドドラマ。"
+- title: "SPY×FAMILY"
+  watchedDate: "2022-08-15"
+  watchCount: 1
+  genres: ["コメディ", "アクション"]
+  comment: "アーニャがとにかく可愛い。"
+- title: "デートアライブIV"
+  watchedDate: "2022-09-10"
+  watchCount: 1
+  genres: ["恋愛", "SF"]
+  comment: "四期で更に展開。"
+- title: "かぐや様は告らせたい3期"
+  watchedDate: "2022-08-25"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "三期で更に進展。"
+- title: "まちかどまぞく2丁目"
+  watchedDate: "2022-06-20"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "まちかどまぞくの二期。"
+- title: "パリピ孔明"
+  watchedDate: "2022-08-05"
+  watchCount: 1
+  genres: ["コメディ", "音楽"]
+  comment: "諸葛孔明が現代に。"
+- title: "ラブライブ虹が先"
+  watchedDate: "2020-12-20"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "虹ヶ咲学園の物語。"
+- title: "ラブライブ虹が先2期"
+  watchedDate: "2022-05-15"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "虹ヶ咲の二期。"
+- title: "takt op.Distiny"
+  watchedDate: "2022-01-20"
+  watchCount: 1
+  genres: ["アクション", "音楽"]
+  comment: "音楽とアクション。"
+- title: "シュタインズ・ゲート"
+  watchedDate: "2020-03-15"
+  watchCount: 1
+  genres: ["SF"]
+  comment: "タイムリープSFの傑作。"
+- title: "シュタインズ・ゲート・ゼロ"
+  watchedDate: "2020-05-20"
+  watchCount: 1
+  genres: ["SF"]
+  comment: "シュタゲの続編。"
+- title: "劇場版シュタインズ・ゲート"
+  watchedDate: "2020-07-10"
+  watchCount: 1
+  genres: ["SF"]
+  comment: "劇場版で完結。"
+- title: "彼方のアストラ"
+  watchedDate: "2020-01-25"
+  watchCount: 1
+  genres: ["SF", "青春"]
+  comment: "宇宙サバイバル。"
+- title: "ラブライブ！スーパースター2期"
+  watchedDate: "2022-12-15"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "スーパースターの二期。"
+- title: "ようこそ実力至上主義の教室へ2期"
+  watchedDate: "2022-11-08"
+  watchCount: 1
+  genres: ["学園"]
+  comment: "実力主義の二期。"
+- title: "異世界おじさん"
+  watchedDate: "2022-12-20"
+  watchCount: 1
+  genres: ["コメディ", "異世界"]
+  comment: "おじさんの異世界体験談。"
+- title: "プリマドール"
+  watchedDate: "2022-10-15"
+  watchCount: 1
+  genres: ["ドラマ", "音楽"]
+  comment: "人形たちの物語。"
+- title: "EngageKiss"
+  watchedDate: "2022-11-25"
+  watchCount: 1
+  genres: ["アクション", "恋愛"]
+  comment: "恋愛アクション。"
+- title: "リコリス・リコイル"
+  watchedDate: "2022-10-25"
+  watchCount: 2
+  genres: ["アクション", "日常"]
+  comment: "千束とたきなのコンビが良い。"
+- title: "Dr.STONE"
+  watchedDate: "2020-02-15"
+  watchCount: 1
+  genres: ["SF"]
+  comment: "科学の力で文明復活。"
+- title: "ゆるゆり"
+  watchedDate: "2018-11-20"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "女子中学生の日常。"
+- title: "ゆるゆり♪♪"
+  watchedDate: "2019-01-10"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "ゆるゆりの二期。"
+- title: "ゆるゆり　なちゅやちゅみ"
+  watchedDate: "2019-03-15"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "ゆるゆりの夏休み。"
+- title: "ゆるゆり　さん☆ハイ！"
+  watchedDate: "2019-06-20"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "ゆるゆりの三期。"
+- title: "ゆるゆり、"
+  watchedDate: "2019-08-25"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "ゆるゆりの特別編。"
+- title: "少女歌劇れヴューズスタライト"
+  watchedDate: "2019-01-20"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "舞台少女の物語。"
+- title: "チェンソーマン"
+  watchedDate: "2023-02-15"
+  watchCount: 1
+  genres: ["アクション"]
+  comment: "デビルハンターの戦い。"
+- title: "ぼっち・ざ・ろっく！"
+  watchedDate: "2023-02-20"
+  watchCount: 1
+  genres: ["音楽", "日常", "コメディ"]
+  comment: "音楽好きにはたまらない。共感できる。"
+- title: "陰の実力者になりたくて"
+  watchedDate: "2023-04-10"
+  watchCount: 1
+  genres: ["異世界", "コメディ"]
+  comment: "中二病異世界転生。"
+- title: "艦これ　いつかあの海で"
+  watchedDate: "2022-03-15"
+  watchCount: 1
+  genres: ["ミリタリー", "ドラマ"]
+  comment: "艦これの劇場版。"
+- title: "SPY×FAMILY"
+  watchedDate: "2024-01-15"
+  watchCount: 1
+  genres: ["コメディ", "アクション"]
+  comment: "スパイファミリーの続編。"
+- title: "機動戦士ガンダム　水星の魔女"
+  watchedDate: "2023-08-15"
+  watchCount: 1
+  genres: ["ロボット", "ドラマ"]
+  comment: "新しいガンダムシリーズ。"
+- title: "勇者パーティーを追放されたビーストテイマー、最強種の猫耳少女と出会う"
+  watchedDate: "2023-01-20"
+  watchCount: 1
+  genres: ["ファンタジー", "異世界"]
+  comment: "長いタイトルのファンタジー。"
+- title: "BLACK　LAGOON"
+  watchedDate: "2019-04-10"
+  watchCount: 1
+  genres: ["アクション"]
+  comment: "海賊アクション。"
+- title: "ハヤテのごとく！"
+  watchedDate: "2018-12-15"
+  watchCount: 1
+  genres: ["コメディ", "恋愛"]
+  comment: "執事コメディ。"
+- title: "王様ランキング"
+  watchedDate: "2022-04-10"
+  watchCount: 1
+  genres: ["ファンタジー"]
+  comment: "王子の成長物語。"
+- title: "アークナイツ"
+  watchedDate: "2023-01-15"
+  watchCount: 1
+  genres: ["アクション", "SF"]
+  comment: "ゲーム原作アニメ。"
+- title: "異世界薬局"
+  watchedDate: "2022-12-08"
+  watchCount: 1
+  genres: ["異世界"]
+  comment: "薬剤師の異世界転生。"
+- title: "ガヴリールドロップアウト"
+  watchedDate: "2018-05-12"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "天使と悪魔の日常。"
+- title: "響け！ユーフォニアム"
+  watchedDate: "2017-08-25"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "吹奏楽部の青春。"
+- title: "響け！ユーフォニアム2"
+  watchedDate: "2018-01-18"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "ユーフォニアムの二期。"
+- title: "かんなぎ"
+  watchedDate: "2019-02-10"
+  watchCount: 1
+  genres: ["コメディ", "ファンタジー"]
+  comment: "神様コメディ。"
+- title: "お兄ちゃんはおしまい！"
+  watchedDate: "2023-05-15"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "性転換コメディ。"
+- title: "魔王学院の不適合者II"
+  watchedDate: "2023-02-20"
+  watchCount: 1
+  genres: ["ファンタジー", "学園"]
+  comment: "魔王学院の二期。"
+- title: "土下座で頼んでみた"
+  watchedDate: "2021-01-25"
+  watchCount: 1
+  genres: ["コメディ", "ショート"]
+  comment: "土下座コメディ。"
+- title: "嫌な顔されながら"
+  watchedDate: "2021-02-15"
+  watchCount: 1
+  genres: ["コメディ", "ショート"]
+  comment: "ショートコメディ。"
+- title: "転生王女と天才令嬢の魔法革命"
+  watchedDate: "2023-06-10"
+  watchCount: 1
+  genres: ["ファンタジー"]
+  comment: "百合ファンタジー。"
+- title: "とんでもスキルで異世界放浪メシ"
+  watchedDate: "2023-04-15"
+  watchCount: 1
+  genres: ["異世界"]
+  comment: "異世界グルメアニメ。"
+- title: "NieR:Automata"
+  watchedDate: "2023-07-20"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "ゲーム原作アニメ。"
+- title: "痛いのは嫌なので防御力に極振りしました"
+  watchedDate: "2020-05-15"
+  watchCount: 1
+  genres: ["異世界", "コメディ"]
+  comment: "防御特化VRMMO。"
+- title: "痛いのは嫌なので防御力に極振りしました2"
+  watchedDate: "2023-03-25"
+  watchCount: 1
+  genres: ["異世界", "コメディ"]
+  comment: "防御力極振りの二期。"
+- title: "がんばれ同期ちゃん"
+  watchedDate: "2021-07-12"
+  watchCount: 1
+  genres: ["コメディ", "ショート"]
+  comment: "同期のショートコメディ。"
+- title: "推しの子"
+  watchedDate: "2023-08-20"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "芸能界の闇と光。"
+- title: "王様ランキング2期"
+  watchedDate: "2023-09-15"
+  watchCount: 1
+  genres: ["ファンタジー"]
+  comment: "王様ランキングの続編。"
+- title: "かぐや様は告らせたいファーストキッスは終わらない"
+  watchedDate: "2023-05-10"
+  watchCount: 1
+  genres: [青春, "コメディ"]
+  comment: "かぐや様の劇場版。"
+- title: "この素晴らしい世界に爆裂を！"
+  watchedDate: "2023-06-25"
+  watchCount: 1
+  genres: ["異世界", "コメディ"]
+  comment: "めぐみん主人公のスピンオフ。"
+- title: "ゴールデンカムイ"
+  watchedDate: "2019-05-20"
+  watchCount: 1
+  genres: ["アクション"]
+  comment: "明治時代の冒険活劇。"
+- title: "スパイ教室"
+  watchedDate: "2023-07-15"
+  watchCount: 1
+  genres: ["スパイ", "学園"]
+  comment: "スパイ養成学校。"
+- title: "かげじつ！"
+  watchedDate: "2024-03-18"
+  watchCount: 1
+  genres: ["異世界", "コメディ"]
+  comment: "陰の実力者の略称。"
+- title: "ライアー・ライアー"
+  watchedDate: "2024-04-10"
+  watchCount: 1
+  genres: ["学園", "コメディ"]
+  comment: "嘘をつくことが得意な主人公の物語。"
+- title: "サマータムレンダ"
+  watchedDate: "2024-05-15"
+  watchCount: 1
+  genres: ["青春", "ファンタジー"]
+  comment: "時間を巻き戻す能力を持つ少女の物語。"
+- title: "リズと青い鳥"
+  watchedDate: "2024-06-20"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "響け！ユーフォニアムの劇場版。"
+- title: "劇場版響け！ユーフォニアム～誓いのフィナーレ～"
+  watchedDate: "2024-07-10"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "ユーフォニアムの完結編。"
+- title: "その着せ替え人形は恋をする"
+  watchedDate: "2024-08-05"
+  watchCount: 1
+  genres: ["恋愛", "コメディ"]
+  comment: "コスプレと恋愛の物語。"
+- title: "Dr.STONE NEW world"
+  watchedDate: "2024-09-15"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "科学と冒険の物語。"
+- title: "かけじつ！せかんど"
+  watchedDate: "2024-10-20"
+  watchCount: 1
+  genres: ["異世界", "コメディ", "ショート"]
+  comment: "陰の実力者のショートアニメ。"
+- title: "ひきこまり吸血姫の悶々"
+  watchedDate: "2024-11-05"
+  watchCount: 1
+  genres: ["コメディ", "ファンタジー"]
+  comment: "吸血鬼と人間の異世界コメディ。"
+- title: "16bitセンセーション"
+  watchedDate: "2024-12-01"
+  watchCount: 1
+  genres: ["SF", "コメディ"]
+  comment: "90年代のゲーム文化を描いたAI SF。"
+- title: "呪術廻戦 懐玉編"
+  watchedDate: "2024-12-20"
+  watchCount: 1
+  genres: ["アクション", "ファンタジー"]
+  comment: "呪術廻戦の新たな物語。"
+- title: "ガウリールドロップアウト"
+  watchedDate: "2024-11-15"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "天使と悪魔の日常を描いたコメディ。"
+- title: "ようこそ実力至上主義の教室へ3期"
+  watchedDate: "2024-10-05"
+  watchCount: 1
+  genres: ["学園", "ドラマ"]
+  comment: "実力主義の学園生活を描いた新シリーズ。"
+- title: "マッシュル-MASHLE-"
+  watchedDate: "2024-09-05"
+  watchCount: 1
+  genres: ["アクション", "コメディ"]
+  comment: "魔法のない世界での筋肉バトル。"
+- title: "この素晴らしい世界に祝福を！3"
+  watchedDate: "2024-08-10"
+  watchCount: 1
+  genres: ["異世界", "コメディ"]
+  comment: "このすばの新たな冒険。"
+- title: "無職転生II"
+  watchedDate: "2024-07-15"
+  watchCount: 1
+  genres: ["異世界", "ファンタジー"]
+  comment: "無職転生の続編。"
+- title: "響け！ユーフォニアム３"
+  watchedDate: "2024-06-05"
+  watchCount: 1
+  genres: ["音楽", "青春"]
+  comment: "ユーフォニアムの新シリーズ。"
+- title: "しかのこのこのここしたんたん"
+  watchedDate: "2024-05-20"
+  watchCount: 1
+  genres: ["コメディ"]
+  comment: "コメディアニメ。"
+- title: "宇宙戦艦ヤマト2022"
+  watchedDate: "2024-04-15"
+  watchCount: 1
+  genres: ["SF", "ロボット"]
+  comment: "ヤマトの新シリーズ。"
+- title: "宇宙戦艦ヤマトという時代 西暦2202年の選択"
+  watchedDate: "2024-03-10"
+  watchCount: 1
+  genres: ["SF", "ロボット"]
+  comment: "ヤマトの劇場版。"
+- title: "宇宙戦艦ヤマト2205 新たなる旅立ち"
+  watchedDate: "2024-02-05"
+  watchCount: 1
+  genres: ["SF", "ロボット"]
+  comment: "ヤマトの続編。"
+- title: "DARKER THAN BLACK 黒の契約者"
+  watchedDate: "2024-01-10"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "超能力者の戦いを描いたアニメ。"
+- title: "DARKER THAN BLACK 流星の双子"
+  watchedDate: "2024-01-20"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "DARKER THAN BLACKの続編。"
+- title: "時々ボソッとロシア語でデレる隣のアーリャさん"
+  watchedDate: "2024-01-30"
+  watchCount: 1
+  genres: ["コメディ", "日常"]
+  comment: "ロシア語を話す隣人との日常を描いたコメディ。"
+- title: "推しの子 2期"
+  watchedDate: "2024-02-20"
+  watchCount: 1
+  genres: ["ドラマ"]
+  comment: "推しの子の続編。"
+- title: "葬送のフリーレン"
+  watchedDate: "2024-03-05"
+  watchCount: 1
+  genres: ["ファンタジー", "ドラマ"]
+  comment: "魔王を倒した後の冒険者たちの物語。"
+- title: "逃げ上手の若君"
+  watchedDate: "2024-04-05"
+  watchCount: 1
+  genres: ["歴史", "アクション"]
+  comment: "鎌倉時代の逃げる若君の物語。"
+- title: "ダンダダン"
+  watchedDate: "2024-05-05"
+  watchCount: 1
+  genres: ["アクション", "コメディ"]
+  comment: "妖怪とのバトルを描いたアニメ。"
+- title: "ソードアートオンライン オルタナティブ ガンゲイル・オンラインII"
+  watchedDate: "2024-06-15"
+  watchCount: 1
+  genres: ["SF", "アクション"]
+  comment: "SAOのスピンオフ作品。"
+- title: "ギルドの受付嬢ですが、残業は嫌なのでボスをソロ討伐しようと思います"
+  watchedDate: "2024-07-20"
+  watchCount: 1
+  genres: ["ファンタジー", "コメディ"]
+  comment: "受付嬢の異世界冒険。"
+- title: "チ。ー地球の運動についてー"
+  watchedDate: "2024-08-15"
+  watchCount: 1
+  genres: ["SF", "ドラマ"]
+  comment: "地球の運動をテーマにしたアニメ。"
+- title: "影の実力者になりたくて！2"
+  watchedDate: "2024-09-10"
+  watchCount: 1
+  genres: ["異世界", "コメディ"]
+  comment: "陰の実力者の続編。"
+- title: "クズの本懐"
+  watchedDate: "2025-07-03"
+  watchCount: 1
+  genres: ["恋愛", "ドラマ"]
+  comment: "神"
+- title: "アポカリプスホテル"
+  watchedDate: "2025-07-5"
+  watchCount: 1
+  genres: ["SF", "コメディ"]
+  comment: "神アニメ。"

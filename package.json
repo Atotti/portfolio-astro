@@ -27,6 +27,8 @@
     "typescript": "^5.7.2"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.51.1"
+    "@pandacss/dev": "^0.51.1",
+    "@playwright/test": "^1.53.1",
+    "playwright": "^1.53.1"
   }
 }
