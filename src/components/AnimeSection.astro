@@ -1,0 +1,175 @@
+---
+import { getEntry } from 'astro:content';
+import SectionTitle from "./SectionTitle.astro"
+import Section from "./Atoms/Section.astro"
+import SectionContent from "./Atoms/SectionContent.astro"
+import { css } from '../../styled-system/css'
+
+// YAMLファイルからデータを取得
+const animeEntry = await getEntry('anime', 'main'); // `main.yaml` を指定
+if (!animeEntry) {
+    throw new Error('Anime data not found');
+}
+const animeData = animeEntry.data;
+
+// デフォルトソート：最近見た順
+animeData.sort((a, b) => {
+    const dateA = a.watchedDate ? new Date(a.watchedDate).getTime() : 0;
+    const dateB = b.watchedDate ? new Date(b.watchedDate).getTime() : 0;
+    return dateB - dateA;
+});
+
+// 全てのジャンルを重複なく取得
+const allGenres = [...new Set(animeData.flatMap(anime => anime.genres))];
+---
+
+<Section>
+    <SectionTitle>Recommended Anime</SectionTitle>
+    <SectionContent>私の視聴したアニメを紹介します。ソートやフィルタリングができます。</SectionContent>
+
+    <!-- 操作パネル -->
+    <div class={css({
+        display: 'flex',
+        flexDirection: { base: 'column', md: 'row' },
+        gap: '4',
+        padding: '4',
+        backgroundColor: 'gray.50',
+        borderRadius: 'lg',
+        marginTop: '8',
+        alignItems: { base: 'stretch', md: 'center' }
+    })}>
+        <!-- ソート機能 -->
+        <div class={css({ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '1' })}>
+            <label for="sort-select" class={css({ fontWeight: 'bold' })}>ソート:</label>
+            <select id="sort-select" class={css({ padding: '2', borderRadius: 'md', border: '1px solid token(colors.gray.200)' })}>
+                <option value="watchedDate-desc">見た日 (新しい順)</option>
+                <option value="watchedDate-asc">見た日 (古い順)</option>
+                <option value="title-asc">タイトル (昇順)</option>
+                <option value="watchCount-desc">視聴回数 (多い順)</option>
+            </select>
+        </div>
+
+        <!-- フィルタリング機能 -->
+        <div class={css({ display: 'flex', flexWrap: 'wrap', gap: '2', alignItems: 'center' })}>
+            <span class={css({ fontWeight: 'bold' })}>ジャンル:</span>
+            {allGenres.map(genre => (
+                <label class={css({ display: 'flex', alignItems: 'center', gap: '1', padding: '1', cursor: 'pointer' })}>
+                    <input type="checkbox" class="genre-filter" value={genre} />
+                    {genre}
+                </label>
+            ))}
+        </div>
+    </div>
+
+    <!-- アニメリストコンテナ -->
+    <div id="anime-list-container" class={css({
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '4',
+        marginTop: '4',
+        maxWidth: '800px',
+        marginX: 'auto'
+    })}>
+        <!-- この中身はクライアントサイドのJavaScriptで生成されます -->
+    </div>
+</Section>
+
+<!-- AstroのデータをJavaScriptに渡すためのscriptタグ -->
+<script define:vars={{ initialAnimeData: animeData }}>
+    // DOM要素を取得
+    const sortSelect = document.getElementById('sort-select');
+    const genreFilters = document.querySelectorAll('.genre-filter');
+    const listContainer = document.getElementById('anime-list-container');
+
+    // アニメリストを描画する関数
+    function renderList(animeList) {
+        listContainer.innerHTML = ''; // コンテナをクリア
+
+        if (animeList.length === 0) {
+            listContainer.innerHTML = `<p style="text-align: center; color: #666; padding: 2rem;">該当するアニメはありません。</p>`;
+            return;
+        }
+
+        animeList.forEach(anime => {
+            const animeCard = document.createElement('div');
+            animeCard.className = 'anime-card'; // スタイルはPandaCSSが自動で適用
+            animeCard.innerHTML = `
+                <div class="card-header">
+                    <h3 class="title" title="${anime.title}">${anime.title}</h3>
+                    <div class="meta">
+                        ${anime.watchedDate ? `<span>見た日: ${anime.watchedDate}</span>` : ''}
+                        ${anime.watchCount > 0 ? `<span>回数: ${anime.watchCount}</span>` : ''}
+                    </div>
+                </div>
+                ${anime.comment ? `<p class="comment">${anime.comment}</p>` : ''}
+                ${anime.genres && anime.genres.length > 0 ? `<div class="genres">${anime.genres.map(g => `<span>${g}</span>`).join('')}</div>` : ''}
+            `;
+            listContainer.appendChild(animeCard);
+        });
+    }
+
+    // 表示を更新するメインの関数
+    function updateDisplay() {
+        // 1. フィルタリング
+        const selectedGenres = Array.from(genreFilters)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value);
+
+        let filteredData = selectedGenres.length === 0
+            ? [...initialAnimeData] // チェックがなければ全件表示
+            : initialAnimeData.filter(anime =>
+                selectedGenres.every(genre => anime.genres.includes(genre))
+            );
+
+        // 2. ソート
+        const [key, order] = sortSelect.value.split('-');
+        filteredData.sort((a, b) => {
+            let valA = a[key];
+            let valB = b[key];
+
+            if (key === 'watchedDate') {
+                valA = new Date(valA || 0).getTime();
+                valB = new Date(valB || 0).getTime();
+            } else if (key === 'title') {
+                return order === 'asc' ? valA.localeCompare(valB, 'ja') : valB.localeCompare(valA, 'ja');
+            }
+
+            return order === 'asc' ? valA - valB : valB - valA;
+        });
+
+        // 3. 再描画
+        renderList(filteredData);
+    }
+
+    // イベントリスナーを設定
+    sortSelect.addEventListener('change', updateDisplay);
+    genreFilters.forEach(checkbox => {
+        checkbox.addEventListener('change', updateDisplay);
+    });
+
+    // 初期表示
+    renderList(initialAnimeData);
+
+    // カード用のスタイルを動的に追加（PandaCSSのクラスを模倣）
+    const style = document.createElement('style');
+    style.textContent = `
+        .anime-card {
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            background-color: white;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .card-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+        .title { font-weight: bold; font-size: 1.125rem; color: #1a202c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; }
+        .meta { display: flex; gap: 0.75rem; font-size: 0.875rem; color: #718096; flex-shrink: 0; }
+        .comment { font-size: 1rem; color: #4a5568; padding-top: 0.5rem; border-top: 1px solid #f7fafc; margin-top: 0.5rem; }
+        .genres { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+        .genres span { background-color: #edf2f7; color: #4a5568; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; }
+    `;
+    document.head.appendChild(style);
+
+</script>
